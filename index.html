@@ -108,7 +108,7 @@ h2{font-size:clamp(32px,4.2vw,52px);line-height:1.07;letter-spacing:-1.8px;margi
 /* MPP */
 .mpp{padding:18px}
 .mpp-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.mpp-head h3{font-size:18px;margin:0}
-.timeline{border:1px solid #dedbd1;border-radius:12px;overflow:hidden;background:white}
+.timeline{position:relative;border:1px solid #dedbd1;border-radius:12px;overflow:hidden;background:white}
 .months{display:grid;grid-template-columns:170px repeat(18,1fr);background:#faf9f5;font-size:7px}
 .months div{padding:6px;border-right:1px solid #ece9e2;text-align:center}
 .mrow{display:grid;grid-template-columns:170px 1fr;min-height:42px;border-top:1px solid #ece9e2}.mrow .label{padding:8px;font-size:8px;font-weight:800;background:#fbfaf7}
@@ -138,6 +138,23 @@ h2{font-size:clamp(32px,4.2vw,52px);line-height:1.07;letter-spacing:-1.8px;margi
 .calc{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;margin-top:34px}.calcbox,.result{border-radius:24px;padding:27px}.calcbox{background:#fff;border:1px solid var(--line)}.field{margin-bottom:20px}.field label{display:flex;justify-content:space-between;font-size:12px;font-weight:800;margin-bottom:7px}input[type=range]{width:100%;accent-color:var(--dark)}.result{background:var(--dark);color:white;display:flex;flex-direction:column;justify-content:center}.result small{color:#dce3d7}.big{font-size:51px;font-weight:900;letter-spacing:-2px;line-height:1;margin:8px 0}
 .cta{padding:84px 0}.ctabox{background:var(--dark);color:white;border-radius:30px;padding:46px;display:grid;grid-template-columns:1.25fr .75fr;gap:30px;align-items:center}.ctabox h2{color:white;margin-top:0}.ctabox p{color:#dce2d7}.cta-actions{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap}.ctabox .primary{background:white;color:var(--dark)}.ctabox .secondary{color:white;background:transparent;border-color:#6d7a64}
 footer{padding:23px 0 38px;color:#787d74;font-size:11px}.foot{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between}
+.hero-flow{display:grid;grid-template-columns:1fr 22px 1fr 22px 1fr 22px 1fr;align-items:center;margin-top:14px;padding:11px;background:#f8f7f2;border:1px solid var(--line);border-radius:14px;font-size:8px;font-weight:900;text-align:center;text-transform:uppercase;letter-spacing:.4px}
+.hero-flow span:nth-child(even){color:var(--copper);font-size:15px}
+.problem-grid,.bridge-grid,.benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.problem-card,.bridge-card,.benefit-card{background:#fff;border:1px solid var(--line);border-radius:19px;padding:22px}
+.problem-card b,.benefit-card b{display:block;margin-bottom:8px}.problem-card p,.benefit-card p{font-size:13px;color:var(--muted);margin:0}
+.problem-card i{display:grid;place-items:center;width:29px;height:29px;border-radius:50%;background:#f1e5dc;color:#9a5e35;font-style:normal;font-size:11px;font-weight:900;margin-bottom:18px}
+.bridge-grid{grid-template-columns:1fr 1.15fr 1fr;align-items:stretch}
+.bridge-card{position:relative}.bridge-card.connection{background:var(--dark);color:#fff;border-color:var(--dark);box-shadow:var(--shadow)}
+.bridge-card h3{font-size:15px;margin:0 0 16px;text-transform:uppercase;letter-spacing:.7px}.bridge-card ul{list-style:none;padding:0;margin:0;display:grid;gap:9px;font-size:13px}.bridge-card li:before{content:'✓';color:var(--olive);font-weight:900;margin-right:8px}.bridge-card.connection li:before{color:#c5d49f}
+.loop{display:grid;grid-template-columns:repeat(8,1fr);gap:6px;margin-top:30px;counter-reset:loop}
+.loop-step{position:relative;background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 10px;min-height:112px;font-size:10px}.loop-step:before{counter-increment:loop;content:counter(loop);display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#e9eddf;color:var(--dark);font-weight:900;margin-bottom:11px}.loop-step:not(:last-child):after{content:'→';position:absolute;right:-10px;top:45px;z-index:2;color:var(--copper);font-weight:900}.loop-step b{display:block;font-size:11px;margin-bottom:4px}.loop-step span{color:var(--muted)}
+.readiness{font-size:7px;border-radius:999px;padding:4px 6px;font-weight:900;white-space:nowrap}.ready{background:#e6efdc;color:#4e693b}.partial{background:#f7ebc9;color:#8b681e}.blocked{background:#f5dcd8;color:#9a443d}
+.make-table .tr{grid-template-columns:1.45fr .65fr .65fr .55fr .7fr .9fr .7fr .55fr}.make-table .tr div{padding:9px 6px}
+.mock-caption{font-size:9px;color:#73786f;margin:12px 0 0}.risk{color:#a44940;font-size:7px;font-weight:900}.dependency{border-top:2px dotted #a57b58;position:absolute;height:1px;z-index:3}
+.pep-tools{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;margin-top:12px}.pep-tools .quick{padding:8px 4px}
+.learning-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}.learning-meta div{background:#f8f7f2;border-radius:8px;padding:8px;font-size:8px}.learning-meta b{display:block;font-size:11px}
+.calcbox{box-shadow:0 12px 35px rgba(45,53,39,.07)}.result{position:relative;overflow:hidden}.result:after{content:'POTENZIAL';position:absolute;right:-23px;top:25px;transform:rotate(38deg);font-size:9px;letter-spacing:2px;color:#afbe91}
 @media(max-width:1000px){
  .hero-grid,.usp,.calc,.ctabox{grid-template-columns:1fr}
  .phone-float{right:10px}.links{display:none}
@@ -154,6 +171,9 @@ footer{padding:23px 0 38px;color:#787d74;font-size:11px}.foot{border-top:1px sol
  .kpis,.content2,.chartgrid{grid-template-columns:1fr}
  .months{grid-template-columns:95px repeat(18,1fr)}.mrow{grid-template-columns:95px 1fr}
  .tabs{gap:4px}.tab{padding:6px 8px}.ctabox{padding:30px}
+ .problem-grid,.bridge-grid,.benefit-grid{grid-template-columns:1fr}.loop{grid-template-columns:repeat(2,1fr)}.loop-step:not(:last-child):after{display:none}
+ .hero-flow{grid-template-columns:1fr}.hero-flow span:nth-child(even){transform:rotate(90deg)}
+ .make-table{overflow-x:auto}.make-table .tr{min-width:720px}.pep-tools{grid-template-columns:repeat(2,1fr)}
 }
 </style>
 </head>
@@ -203,60 +223,42 @@ footer{padding:23px 0 38px;color:#787d74;font-size:11px}.foot{border-top:1px sol
      <div class="phone-body">
       <h4>Board erkannt</h4>
       <p>KI gleicht Post-its mit Projekt, Gewerk, Zeitraum und bestehendem Plan ab.</p>
-      <div class="scan-status">24 Vorgänge · 22 automatisch zugeordnet</div>
+      <div class="scan-status">24 Vorgänge erkannt<br>22 automatisch zugeordnet · 2 prüfen</div>
      </div>
     </div>
    </div>
+   <div class="hero-flow" aria-label="Vom analogen Board zur digitalen Steuerung"><b>Analoges Board</b><span>→</span><b>Smartphone / Foto</b><span>→</span><b>KI-Kontextabgleich</b><span>→</span><b>Digitale Steuerung</b></div>
   </div>
  </div>
 </header>
 
-<section class="section white" id="workflow">
+<section class="section white" id="problem">
  <div class="container">
-  <div class="kicker">Der zentrale USP</div>
-  <h2>Vom analogen LPS-Board direkt ins digitale System.</h2>
-  <p class="intro">Die Software soll die Zusammenarbeit am Board nicht ersetzen. Sie digitalisiert das Ergebnis. Genau dort entsteht heute der größte Medienbruch.</p>
+  <div class="kicker">Der Medienbruch</div><h2>Analog funktioniert – bis die Nachbereitung beginnt.</h2>
+  <div class="problem-grid">
+   <div class="problem-card"><i>01</i><b>Doppelte Übertragung</b><p>Workshop-Ergebnisse werden danach erneut in Excel, Planner, Protokolle oder KPI-Dateien übertragen.</p></div>
+   <div class="problem-card"><i>02</i><b>Getrennte Systeme</b><p>Meilensteine, Vorschau, Restriktionen, Wochenzusagen und Störungen liegen häufig an verschiedenen Orten.</p></div>
+   <div class="problem-card"><i>03</i><b>Zu wenig Rückfluss</b><p>Erkenntnisse aus der Ausführung gelangen nur eingeschränkt zurück in Planung und kontinuierliche Verbesserung.</p></div>
+  </div>
+ </div>
+</section>
 
-  <div class="usp">
-   <div class="usp-copy">
-    <h3>Ein Foto statt doppelte Pflege.</h3>
-    <p>Nach dem Workshop wird das definierte Board mit dem Smartphone fotografiert. Die KI nutzt nicht nur Handschrifterkennung, sondern den vorhandenen Projektkontext.</p>
-    <div class="steps">
-     <div class="step"><n>1</n><div><b>Board fotografieren</b><span>QR-/Boardmarker helfen bei Bereich, Perspektive und Zuordnung.</span></div></div>
-     <div class="step"><n>2</n><div><b>KI ordnet Vorgänge zu</b><span>Text, Farbe, Gewerk, Kalenderwoche und bestehende Vorgänge werden gemeinsam bewertet.</span></div></div>
-     <div class="step"><n>3</n><div><b>Nur Unklares bestätigen</b><span>Der Nutzer korrigiert Ausnahmen – nicht jedes einzelne Post-it.</span></div></div>
-     <div class="step"><n>4</n><div><b>Digital weitersteuern</b><span>Vorschau, PEP, Make Ready, Störungen und KPIs greifen auf dieselben Daten zu.</span></div></div>
-    </div>
-   </div>
+<section class="section" id="workflow">
+ <div class="container">
+  <div class="kicker">Analog + digital</div><h2>Nicht analog oder digital. Sondern beides dort, wo es stärker ist.</h2>
+  <p class="intro">Der Workshop bleibt physisch und gemeinsam. just LEAN it. verbindet sein Ergebnis mit der digitalen Projektsteuerung – ohne jedes Post-it einzeln mit einer ID zu versehen.</p>
+  <div class="bridge-grid">
+   <div class="bridge-card"><h3>Analog</h3><ul><li>Gemeinsame Planung</li><li>Diskussion im Team</li><li>Post-its am physischen Board</li><li>Hohe Beteiligung im Workshop</li></ul></div>
+   <div class="bridge-card connection"><h3>Verbindung durch just LEAN it.</h3><ul><li>Smartphone-Aufnahme</li><li>Boardmarker / QR zur Orientierung</li><li>KI-Abgleich mit Projekt, MPP, Bereichen, Gewerken, Sequenzen und bestehenden Vorgängen</li><li>Nur Unsicherheiten bestätigen</li></ul></div>
+   <div class="bridge-card"><h3>Digital</h3><ul><li>Struktur und Dokumentation</li><li>Nachverfolgung und Make Ready</li><li>Kennzahlen</li><li>Lernen aus Abweichungen</li></ul></div>
+  </div>
+ </div>
+</section>
 
-   <div class="process-visual">
-    <div class="process-title">Analoger Workshop → KI → digitale Steuerung</div>
-    <div class="flowrow">
-     <div class="device">
-      <div style="font-size:9px;font-weight:850;margin-bottom:8px">01 · Physisches Board</div>
-      <div class="photo-board">
-       <div><span class="post y">Schalung</span><span class="post p">Betonage</span></div>
-       <div><span class="post g">Elektro</span><span class="post b">HKLS</span></div>
-       <div><span class="post o">Mauerwerk</span><span class="post y">Freigabe</span></div>
-      </div>
-      <div style="font-size:8px;color:#747970;margin-top:10px">Workshop bleibt haptisch, schnell und kollaborativ.</div>
-     </div>
-     <div class="arrow">→</div>
-     <div class="ai-card">
-      <div style="font-size:9px;font-weight:850">02 · KI-Abgleich</div>
-      <div class="ai-ring">92%</div>
-      <div class="ai-list"><div><span>Post-its erkannt</span><b>24</b></div><div><span>Automatisch gematcht</span><b>22</b></div><div><span>Zu prüfen</span><b>2</b></div></div>
-     </div>
-     <div class="arrow">→</div>
-     <div class="digital-board">
-      <div class="week">03 · Digitale 4-Wochenvorschau</div>
-      <div class="row"><span class="y">Schalung</span><span class="g">Elektro</span><span class="b">HKLS</span></div>
-      <div class="row"><span class="p">Betonage</span><span class="o">Mauerwerk</span><span class="y">Freigabe</span></div>
-      <div class="row"><span class="g">Maler</span><span class="b">Prüfung</span><span class="p">Übergabe</span></div>
-      <div style="font-size:8px;color:#747970;margin-top:12px">Basis für PEP, Make Ready und Kennzahlen.</div>
-     </div>
-    </div>
-   </div>
+<section class="section white" id="regelkreis">
+ <div class="container"><div class="kicker">LPS-Regelkreis</div><h2>Ein durchgängiger Takt von Planung bis Lernen.</h2>
+  <div class="loop">
+   <div class="loop-step"><b>Master Planning</b><span>Meilensteine</span></div><div class="loop-step"><b>Phase Planning</b><span>Sequenzen + MPP</span></div><div class="loop-step"><b>Make Ready</b><span>Restriktionen</span></div><div class="loop-step"><b>Lookahead</b><span>4-Wochenvorschau</span></div><div class="loop-step"><b>Commitment</b><span>Wochenzusagen + PEP</span></div><div class="loop-step"><b>Production</b><span>Umsetzung</span></div><div class="loop-step"><b>Learning</b><span>AEZ, Störungen, Maßnahmen</span></div><div class="loop-step"><b>Feedback</b><span>Zurück in die Planung ↺</span></div>
   </div>
  </div>
 </section>
@@ -272,63 +274,23 @@ footer{padding:23px 0 38px;color:#787d74;font-size:11px}.foot{border-top:1px sol
     <div class="carousel-top">
      <div class="carousel-title">Interaktive Produktansichten</div>
      <div class="tabs">
-      <button class="tab active" data-slide="s1">Dashboard</button>
-      <button class="tab" data-slide="s2">MPP</button>
-      <button class="tab" data-slide="s3">PEP / Wochenplanung</button>
-      <button class="tab" data-slide="s4">KPI & Lernen</button>
+      <button class="tab active" data-slide="s2">MPP / Phase Planning</button>
+      <button class="tab" data-slide="s5">Make Ready</button>
+      <button class="tab" data-slide="s3">4-Wochenvorschau + PEP</button>
+      <button class="tab" data-slide="s4">Dashboard / Learning</button>
      </div>
     </div>
 
-    <section class="slide active" id="s1">
-     <div class="appgrid">
-      <aside class="sidebar">
-       <div class="sidebrand">just LEAN it.</div>
-       <div class="slabel">Übersicht</div><div class="sitem active">Dashboard</div>
-       <div class="slabel">Planung</div><div class="sitem">Gewerkesequenzen</div><div class="sitem">Meilenstein-Phasenplan</div><div class="sitem">4-Wochenvorschau</div><div class="sitem">Make Ready</div>
-       <div class="slabel">Ausführung</div><div class="sitem">PEP / Wochenplanung</div><div class="sitem">Aufgaben</div><div class="sitem">Störungen</div>
-       <div class="slabel">Auswertung</div><div class="sitem">KPIs & Lernen</div><div class="sitem">Berichte</div>
-      </aside>
-      <main class="main">
-       <div class="topline"><div><small style="font-size:8px;color:#7a7f76">Projekt: Beispielprojekt Hochbau</small><h3>Dashboard</h3></div><div class="select">Zeitraum · letzte 8 Wochen</div></div>
-       <div class="kpis">
-        <div class="kpi"><small>AEZ</small><strong>84%</strong><span class="trend">+5 % zur Vorwoche</span></div>
-        <div class="kpi"><small>Meilensteine</small><strong>12 / 3 / 2</strong><span class="trend">Plan · gefährdet · verspätet</span></div>
-        <div class="kpi"><small>Offene Störungen</small><strong>7</strong><span class="trend">3 davon kritisch</span></div>
-        <div class="kpi"><small>Planstabilität</small><strong>78%</strong><span class="trend">stabil</span></div>
-       </div>
-       <div class="content2">
-        <div class="panel">
-         <h4>4-Wochenvorschau · KW 34–37</h4>
-         <div class="weekboard">
-          <div class="hd">Bereich</div><div class="hd">KW 34</div><div class="hd">KW 35</div><div class="hd">KW 36</div><div class="hd">KW 37</div>
-          <div>UG</div><div><span class="post y">Schalung Decke</span></div><div><span class="post o">Bewehrung</span></div><div><span class="post p">Betonage</span></div><div><span class="post b">Elektro</span></div>
-          <div>EG</div><div><span class="post g">Mauerwerk</span></div><div><span class="post b">HKLS</span></div><div><span class="post b">Mauerwerk</span></div><div><span class="post g">Mauerwerk</span></div>
-          <div>1. OG</div><div><span class="post p">Estrich</span></div><div><span class="post o">Putz</span></div><div><span class="post y">Putz</span></div><div><span class="post p">Estrich</span></div>
-          <div>2. OG</div><div><span class="post o">Trockenbau</span></div><div><span class="post g">Fassade</span></div><div><span class="post y">Malerei</span></div><div><span class="post g">Bodenbelag</span></div>
-         </div>
-        </div>
-        <div class="panel"><h4>Nächste Steuerungstermine</h4>
-         <div class="deadline"><span>PEP-Besprechung KW 34</span><b>Heute 08:00</b></div>
-         <div class="deadline"><span>Taktbesprechung</span><b>Heute 10:00</b></div>
-         <div class="deadline"><span>Bauleiter-ReKo</span><b>Morgen 07:15</b></div>
-         <div class="deadline"><span>Workshop Gewerkesequenzen</span><b>20.08.</b></div>
-        </div>
-       </div>
-       <div class="screen-footer"><div class="quick">PEP starten</div><div class="quick">Störung erfassen</div><div class="quick">Aufgabe erstellen</div><div class="quick">Board hochladen</div><div class="quick">Bericht erstellen</div></div>
-      </main>
-     </div>
-    </section>
-
-    <section class="slide" id="s2">
+    <section class="slide active" id="s2">
      <div class="mpp">
       <div class="mpp-head"><div><small style="font-size:8px;color:#7b8077">Projekt · Bauteil A</small><h3>Meilenstein-Phasenplan (MPP)</h3></div><div class="select">Ansicht · Woche</div></div>
       <div class="timeline">
        <div class="months"><div></div><div>Nov</div><div></div><div></div><div>Dez</div><div></div><div></div><div>Jan</div><div></div><div></div><div>Feb</div><div></div><div></div><div>Mär</div><div></div><div></div><div>Apr</div><div></div><div>Mai</div></div>
        <div class="mrow"><div class="label">Planung & Freigaben</div><div class="track"><span class="task ol" style="left:5%;width:22%">Planungsfreigabe</span><span class="task cp" style="left:25%;width:11%">Vergabe Rohbau</span><span class="milestone" style="left:38%"></span></div></div>
-       <div class="mrow"><div class="label">Rohbau</div><div class="track"><span class="task cy" style="left:33%;width:26%">Rohbau UG–2.OG</span><span class="milestone" style="left:61%"></span></div></div>
-       <div class="mrow"><div class="label">Gebäudehülle</div><div class="track"><span class="task am" style="left:51%;width:22%">Fassade / Dach</span><span class="milestone" style="left:75%"></span></div></div>
-       <div class="mrow"><div class="label">Ausbau</div><div class="track"><span class="task ol" style="left:56%;width:37%">TGA & Ausbau</span><span class="milestone" style="left:94%"></span></div></div>
-      </div>
+       <div class="mrow"><div class="label">Rohbau</div><div class="track"><span class="task cy" style="left:33%;width:26%">Rohbau UG–2.OG · 38 AT</span><span class="milestone" style="left:61%"></span></div></div>
+       <div class="mrow"><div class="label">Gebäudehülle</div><div class="track"><span class="task am" style="left:51%;width:22%">Fassade / Dach · 31 AT</span><span class="milestone" style="left:75%"></span></div></div>
+       <div class="mrow"><div class="label">Ausbau</div><div class="track"><span class="task ol" style="left:56%;width:37%">TGA & Ausbau · 54 AT</span><span class="milestone" style="left:94%"></span></div></div>
+      <span class="dependency" style="left:34%;top:20px;width:28%"></span><span class="risk" style="position:absolute;right:8px;top:4px">▲ Terminrisiko +4 AT</span></div>
       <div class="seq">
        <div style="font-size:9px;font-weight:900;margin-bottom:8px">Gewerkesequenz · Detail</div>
        <div class="seqrow"><b>UG</b><span class="y">Schalung</span><span class="o">Bewehr.</span><span class="g">Beton</span><span class="b">Elektro</span><span class="y">Mauerw.</span><span class="p">Putz</span><span class="g">TGA</span><span class="o">Estrich</span><span class="b">Maler</span><span class="g">Boden</span><span class="p">Abnahme</span><span></span></div>
@@ -339,42 +301,41 @@ footer{padding:23px 0 38px;color:#787d74;font-size:11px}.foot{border-top:1px sol
      </div>
     </section>
 
+    <section class="slide" id="s5">
+     <div class="main" style="width:100%">
+      <div class="topline"><div><small style="font-size:8px;color:#7b8077">Lookahead · KW 34–37</small><h3>Make Ready · präventive Restriktionen</h3></div><div class="select">12 bereit · 3 teilweise · 2 blockiert</div></div>
+      <div class="table make-table">
+       <div class="tr"><div>Vorgang</div><div>Bereich</div><div>Gewerk</div><div>KW</div><div>Readiness</div><div>Restriktion</div><div>Verantwortlich</div><div>Fällig</div></div>
+       <div class="tr"><div>Schalung Decke OG 2</div><div>BT A</div><div>Rohbau</div><div>KW 34</div><div><span class="readiness ready">bereit</span></div><div>—</div><div>M. Weber</div><div>19.08.</div></div>
+       <div class="tr"><div>Elektro Rohinstallation</div><div>1. OG</div><div>Elektro</div><div>KW 35</div><div><span class="readiness partial">teilweise bereit</span></div><div>Planung / Freigabe</div><div>S. König</div><div>22.08.</div></div>
+       <div class="tr"><div>Fenstermontage Achse 4–8</div><div>2. OG</div><div>Fassade</div><div>KW 36</div><div><span class="readiness blocked">blockiert</span></div><div>Material</div><div>A. Yilmaz</div><div>25.08.</div></div>
+       <div class="tr"><div>Estrich Abschnitt Ost</div><div>EG</div><div>Ausbau</div><div>KW 36</div><div><span class="readiness partial">teilweise bereit</span></div><div>Vorleistung</div><div>L. Braun</div><div>27.08.</div></div>
+       <div class="tr"><div>Deckensegel Montage</div><div>3. OG</div><div>TGA</div><div>KW 37</div><div><span class="readiness blocked">blockiert</span></div><div>Gerät / Logistik</div><div>P. Roth</div><div>01.09.</div></div>
+      </div>
+      <div class="content2" style="margin-top:14px"><div class="panel"><h4>Readiness nach Restriktionsart</h4><div class="deadline"><span>Planung / Freigabe</span><b>2 offen</b></div><div class="deadline"><span>Material & Personal</span><b>1 offen</b></div><div class="deadline"><span>Vorleistung, Gerät & Logistik</span><b>2 offen</b></div></div><div class="panel"><h4>Klare Trennung</h4><p class="mock-caption"><b>Restriktion:</b> präventiv vor Ausführungsstart klären.<br><br><b>Störung:</b> eingetretenes Ereignis während der Umsetzung – separat im Learning Loop erfassen.</p></div></div>
+     </div>
+    </section>
+
     <section class="slide" id="s3">
-     <div class="appgrid">
-      <aside class="sidebar">
-       <div class="sidebrand">just LEAN it.</div><div class="slabel">Ausführung</div><div class="sitem active">PEP / Wochenplanung</div><div class="sitem">Make Ready</div><div class="sitem">Störungen</div>
-      </aside>
-      <main class="main">
-       <div class="topline"><div><small style="font-size:8px;color:#7b8077">KW 34 · 17.08.–23.08.</small><h3>PEP / Wochenplanung</h3></div><div class="select">18 Zusagen · 84 % eingehalten</div></div>
-       <div class="kpis"><div class="kpi"><small>Zusagen</small><strong>18</strong></div><div class="kpi"><small>Eingehalten</small><strong>15</strong><span class="trend">84%</span></div><div class="kpi"><small>Nicht eingehalten</small><strong class="red">3</strong></div><div class="kpi"><small>Störungen</small><strong>3</strong></div></div>
-       <div class="table">
-        <div class="tr"><div>Tätigkeit</div><div>Bereich</div><div>Gewerk</div><div>Zuständig</div><div>Status</div></div>
-        <div class="tr"><div>Schalung Decke OG2</div><div>Bauteil A</div><div>Schalung</div><div>Schalung GmbH</div><div class="ok">●</div></div>
-        <div class="tr"><div>Bewehrung Decke OG2</div><div>Bauteil A</div><div>Bewehrung</div><div>Stahlbau GmbH</div><div class="ok">●</div></div>
-        <div class="tr"><div>Betonage Decke OG2</div><div>Bauteil A</div><div>Beton</div><div>Betonbau GmbH</div><div class="red">●</div></div>
-        <div class="tr"><div>Elektro Rohinstallation</div><div>Bauteil A</div><div>Elektro</div><div>Elektro GmbH</div><div class="ok">●</div></div>
-        <div class="tr"><div>HKLS Rohinstallation</div><div>Bauteil A</div><div>HKLS</div><div>HKLS GmbH</div><div class="ok">●</div></div>
-       </div>
-       <div class="content2" style="margin-top:12px">
-        <div class="panel"><h4>Make-Ready-Check</h4>
-         <div class="deadline"><span>Planfreigabe</span><span class="pill">bereit</span></div>
-         <div class="deadline"><span>Material</span><span class="pill">bereit</span></div>
-         <div class="deadline"><span>Personal</span><span class="pill">bereit</span></div>
-         <div class="deadline"><span>Vorleistung</span><span style="font-size:7px;background:#f8e0dd;color:#9c4c44;padding:3px 6px;border-radius:999px">offen</span></div>
-        </div>
-        <div class="panel"><h4>PEP-Protokoll</h4>
-         <div class="deadline"><span>Entscheidung: Betonage verschieben</span><b>BL</b></div>
-         <div class="deadline"><span>Aufgabe: Freigabe Schalplan</span><b>Planung</b></div>
-         <div class="deadline"><span>Störung: fehlende Vorleistung</span><b>+2 AT</b></div>
-        </div>
-       </div>
-      </main>
+     <div class="main" style="width:100%">
+      <div class="topline"><div><small style="font-size:8px;color:#7b8077">Bauteil A · Zusagen aus dem PEP</small><h3>4-Wochenvorschau · KW 34–37</h3></div><div class="select">Status · alle Gewerke</div></div>
+      <div class="panel" style="margin-top:16px"><div class="weekboard">
+       <div class="hd">Bereich</div><div class="hd">KW 34 · Zusage</div><div class="hd">KW 35</div><div class="hd">KW 36</div><div class="hd">KW 37</div>
+       <div>UG</div><div><span class="post y">Schalung Decke ✓</span></div><div><span class="post o">Bewehrung</span></div><div><span class="post p">Betonage</span></div><div><span class="post b">Elektro Rohinst.</span></div>
+       <div>EG</div><div><span class="post g">Mauerwerk ✓</span></div><div><span class="post b">HKLS Rohinst.</span></div><div><span class="post y">Innenputz</span></div><div><span class="post o">Estrich</span></div>
+       <div>1. OG</div><div><span class="post p">Trockenbau !</span></div><div><span class="post g">Elektro Trassen</span></div><div><span class="post b">Lüftung</span></div><div><span class="post y">Abnahme</span></div>
+       <div>2. OG</div><div><span class="post o">Fenster ✓</span></div><div><span class="post y">Fassade</span></div><div><span class="post g">Maler</span></div><div><span class="post p">Bodenbelag</span></div>
+      </div></div>
+      <div class="kpis"><div class="kpi"><small>Wochenzusagen</small><strong>18</strong></div><div class="kpi"><small>Eingehalten</small><strong>15</strong></div><div class="kpi"><small>Nicht eingehalten</small><strong class="red">3</strong></div><div class="kpi"><small>AEZ</small><strong>84%</strong></div></div>
+      <div class="pep-tools"><div class="quick"><b>Zusage</b><br>18</div><div class="quick"><b>Eingehalten</b><br>15</div><div class="quick"><b>Entscheidung</b><br>2</div><div class="quick"><b>Aufgabe</b><br>5</div><div class="quick"><b>Störung</b><br>3</div><div class="quick"><b>Verantwortlich</b><br>zugeordnet</div></div>
      </div>
     </section>
 
     <section class="slide" id="s4">
      <div class="main" style="width:100%">
       <div class="topline"><div><small style="font-size:8px;color:#7b8077">Auswertung · letzte 8 Wochen</small><h3>KPIs & kontinuierliches Lernen</h3></div><div class="select">Alle Gewerke</div></div>
+      <div class="kpis"><div class="kpi"><small>AEZ</small><strong>84%</strong></div><div class="kpi"><small>Planstabilität</small><strong>78%</strong></div><div class="kpi"><small>Make-Ready-Rate</small><strong>91%</strong></div><div class="kpi"><small>Meilensteintreue</small><strong>8/10</strong></div></div>
+      <div class="kpis" style="grid-template-columns:repeat(2,1fr)"><div class="kpi"><small>Offene Restriktionen</small><strong>5</strong></div><div class="kpi"><small>Störungen</small><strong>7</strong></div></div>
       <div class="chartgrid">
        <div class="chart"><h4>AEZ / Percent Plan Complete</h4><div class="plot">
         <span class="line" style="width:18%;left:3%;top:105px;transform:rotate(-15deg)"></span>
@@ -394,16 +355,16 @@ footer{padding:23px 0 38px;color:#787d74;font-size:11px}.foot{border-top:1px sol
       </div>
       <div class="panel" style="margin-top:12px"><h4>Learning Loop</h4><div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px">
        <div class="quick"><b>1. Störung</b><br>fehlende Freigabe</div><div class="quick"><b>2. Ursache</b><br>Schnittstelle Planung</div><div class="quick"><b>3. Maßnahme</b><br>Freigabe-Check D-7</div><div class="quick"><b>4. Wirksamkeit</b><br>keine Wiederholung 4 Wo.</div>
-      </div></div>
+      </div><div class="learning-meta"><div><span>Terminwirkung</span><b>+6 AT</b></div><div><span>Wiederholungsfälle</span><b>2</b></div><div><span>Häufigster Grund</span><b>Freigabe</b></div></div></div>
      </div>
     </section>
    </div>
   </div>
 
-  <div class="explain">
-   <div class="card"><b>Bekannte Logik, weniger Erklärungsaufwand</b><p>MPP, Gewerkesequenzen, Wochenvorschau und PEP sehen so aus, dass Projektteams die Funktionsweise intuitiv verstehen.</p></div>
-   <div class="card"><b>Eine gemeinsame Datenbasis</b><p>Was im MPP oder auf dem analogen Board geplant wird, muss für PEP, Störungsanalyse und KPI nicht erneut erfasst werden.</p></div>
-   <div class="card"><b>Vom Reporting zur Steuerung</b><p>KPIs zeigen nicht nur Vergangenheitswerte, sondern verknüpfen Restriktionen, Planabweichungen und wiederkehrende Ursachen.</p></div>
+  <div class="explain benefit-grid">
+   <div class="card"><b>Weniger doppelte Datenerfassung</b><p>Weniger manuelle Übertragung und Nachbereitung nach dem gemeinsamen Workshop.</p></div>
+   <div class="card"><b>Durchgängige Informationen</b><p>Eine Logik vom MPP über Make Ready bis zur Wochensteuerung.</p></div>
+   <div class="card"><b>Systematisch lernen</b><p>Störungen und Planabweichungen werden zu nachvollziehbaren Verbesserungsmaßnahmen.</p></div>
   </div>
  </div>
 </section>
@@ -420,7 +381,7 @@ footer{padding:23px 0 38px;color:#787d74;font-size:11px}.foot{border-top:1px sol
     <div class="field"><label><span>Beteiligte in der Nachbereitung</span><span id="pV">2</span></label><input id="p" type="range" min="1" max="6" value="2"></div>
     <div class="field" style="margin-bottom:0"><label><span>Interner Ansatz pro Stunde</span><span id="rV">75 €</span></label><input id="r" type="range" min="40" max="140" step="5" value="75"></div>
    </div>
-   <div class="result"><small>Manueller Nachbereitungsaufwand pro Jahr*</small><div class="big" id="hours">144 h</div><div style="font-size:19px;font-weight:850" id="cost">≈ 10.800 € / Jahr</div><small style="margin-top:12px">*48 Arbeitswochen. Dient als Ausgangswert für die Pilotmessung, nicht als Einsparversprechen.</small></div>
+   <div class="result"><small>Manueller Nachbereitungsaufwand heute · pro Jahr*</small><div class="big" id="hours">144 h</div><div style="font-size:19px;font-weight:850" id="cost">≈ 10.800 € / Jahr</div><small style="margin-top:12px">*48 Arbeitswochen. Potenzial – tatsächliche Einsparung wird im Pilot gemessen.</small></div>
   </div>
  </div>
 </section>
@@ -428,8 +389,8 @@ footer{padding:23px 0 38px;color:#787d74;font-size:11px}.foot{border-top:1px sol
 <section class="cta" id="pilot">
  <div class="container">
   <div class="ctabox">
-   <div><div class="kicker" style="color:#b9c79b">Validierungspartner gesucht</div><h2>Passt diese Logik zu eurer Baustellenrealität?</h2><p>Gesucht sind Projekt-, Bau- und Betriebsverantwortliche, die den Prozess challengen: Was spart wirklich Zeit? Welche Daten braucht die Steuerung? Was darf auf keinen Fall zusätzliche Pflege erzeugen?</p></div>
-   <div class="cta-actions"><a class="btn primary" href="mailto:hello@justlinit.com?subject=Interesse%20an%20just%20LEAN%20it.">15-Minuten-Austausch</a><a class="btn secondary" href="#produkt">Produkt ansehen</a></div>
+   <div><div class="kicker" style="color:#b9c79b">Validierungspartner gesucht</div><h2>Passt diese Logik zu eurer Baustellenrealität?</h2><p>Das Produkt befindet sich aktuell in der Validierungsphase. Gesucht wird Feedback von Betriebsleitern, Bauleitern, Projektleitern und LEAN Managern, die das Last Planner System tatsächlich in Projekten einsetzen.</p></div>
+   <div class="cta-actions"><a class="btn primary" href="mailto:hello@justlinit.com?subject=Interesse%20an%20just%20LEAN%20it.">15-Minuten-Austausch</a><a class="btn secondary" href="mailto:hello@justlinit.com?subject=Pilotanfrage%20just%20LEAN%20it.">Pilot anfragen</a></div>
   </div>
  </div>
 </section>
