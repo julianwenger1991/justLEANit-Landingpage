@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 550" role="img" aria-labelledby="title desc">
+  <title id="title">just LEAN it.</title>
+  <desc id="desc">Wortmarke mit abstrahierter Straße und konzentrischen Bögen</desc>
+  <defs>
+    <linearGradient id="olive" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#45502f"/>
+      <stop offset="0.58" stop-color="#76815b"/>
+      <stop offset="1" stop-color="#aeb69f"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#olive)" stroke-linecap="round">
+    <path d="M300 389A255 255 0 0 1 724 496" stroke-width="20"/>
+    <path d="M399 410A170 170 0 0 1 675 438" stroke-width="13"/>
+    <path d="M492 410A108 108 0 0 1 663 418" stroke-width="9"/>
+  </g>
+  <g fill="#eef0e7">
+    <path d="M570 379C520 424 481 474 456 540h21c22-60 56-111 93-151z"/>
+    <path d="M581 379c49 45 80 98 105 161h-21c-22-58-50-109-84-151z"/>
+    <path d="M565 393l9 1-5 31-12-2zM555 435l12 2-7 25-14-3zM543 474l15 4-10 30-18-5zM528 517l19 5-5 18h-22z"/>
+  </g>
+  <g fill="url(#olive)" font-family="Arial, Helvetica, sans-serif">
+    <text x="60" y="406" font-size="83" font-weight="300" letter-spacing="-3">just</text>
+    <text x="61" y="514" font-size="112" font-weight="800" letter-spacing="-5">LEAN</text>
+    <text x="420" y="514" font-size="72" font-weight="300" letter-spacing="-4">it.</text>
+  </g>
+</svg>

@@ -19,8 +19,9 @@ body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-se
 a{text-decoration:none;color:inherit}
 .container{width:min(1200px,calc(100% - 40px));margin:auto}
 nav{position:sticky;top:0;z-index:50;background:rgba(245,243,236,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(222,219,208,.8)}
-.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:26px}
-.brand{font-weight:900;color:var(--dark);font-size:21px;letter-spacing:-.6px}.brand span{color:var(--copper)}
+.nav{height:84px;display:flex;align-items:center;justify-content:space-between;gap:26px}
+.brand{display:inline-flex;align-items:center;flex:0 0 auto;height:72px}
+.brand img{display:block;width:105px;height:72px;object-fit:contain}
 .links{display:flex;gap:24px;font-size:13px;font-weight:700;color:#575d53}
 .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 18px;font-size:14px;font-weight:800;border:1px solid transparent;transition:.18s}
 .btn.primary{background:var(--dark);color:#fff}.btn.primary:hover{transform:translateY(-1px);background:#293423}
@@ -146,6 +147,7 @@ footer{padding:23px 0 38px;color:#787d74;font-size:11px}.foot{border-top:1px sol
 }
 @media(max-width:700px){
  .container{width:min(100% - 26px,1200px)}
+ .nav{height:76px}.brand{height:64px}.brand img{width:93px;height:64px}
  .hero{padding-top:50px}.phone-float{position:relative;right:auto;bottom:auto;margin:-30px auto 0}
  h1{font-size:47px}
  .flowrow{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}
@@ -159,7 +161,7 @@ footer{padding:23px 0 38px;color:#787d74;font-size:11px}.foot{border-top:1px sol
 
 <nav>
  <div class="container nav">
-  <div class="brand">just <span>LEAN</span> it.</div>
+  <a class="brand" href="#" aria-label="just LEAN it. – zur Startseite"><img src="assets/just-lean-it-logo.svg" alt="just LEAN it."></a>
   <div class="links"><a href="#workflow">So funktioniert's</a><a href="#produkt">Produkt</a><a href="#zeit">Zeitersparnis</a><a href="#pilot">Pilot</a></div>
   <a class="btn primary" href="#pilot">Pilot anfragen</a>
  </div>
