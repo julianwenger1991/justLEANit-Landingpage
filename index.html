@@ -230,45 +230,63 @@ footer{padding:23px 0 38px;color:#787d74;font-size:11px}.foot{border-top:1px sol
   .hero-mobile{position:relative;right:auto;bottom:auto;width:150px;margin:-35px auto 0}
   .product-shot img{max-height:none}
 }
+
+/* V4 refinements */
+.brand{width:170px;height:74px;overflow:visible;padding:0;display:flex;align-items:center}
+.brand img{width:160px;height:70px;object-fit:contain;object-position:center;transform:scale(1.22);transform-origin:center;max-width:none}
+.brand-inline{font-weight:850;color:var(--dark);white-space:nowrap}.brand-inline em{font-style:italic}
+.links{gap:17px;font-size:12px;white-space:nowrap}
+.intro,.lead{line-height:1.65}.problem-card p,.bridge-card li,.loop-step span{font-size:13px;line-height:1.55}
+.visual-pair{grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.visual-card{height:auto;overflow:hidden}.visual-card img,.visual-card.software-img img{width:100%;height:auto;max-height:560px;min-height:0;object-fit:contain!important;object-position:center;background:#fff;padding:10px}
+.visual-card .cap{min-height:62px}.visual-card .cap b{font-size:14px}.visual-card .cap span{font-size:11px}
+.mobile-strip{overflow:hidden}.mobile-strip img{object-fit:contain;max-height:480px}
+.hero-shot{min-height:360px;display:flex;align-items:center}.hero-shot>img{object-fit:contain;background:#fff}
+.phone-crop{overflow:hidden!important;background:transparent!important;border:0!important;box-shadow:none!important}
+.phone-crop-dashboard{width:155px!important;height:310px!important;right:-5px!important;bottom:-45px!important;border-radius:34px!important}
+.phone-crop-dashboard img{width:230px!important;max-width:none!important;height:auto!important;transform:translate(-39px,-15px);border:0!important;box-shadow:none!important;background:transparent!important}
+.mobile-pep-clean{width:225px!important;height:470px!important;object-fit:cover!important;object-position:center bottom!important;border-radius:36px;background:transparent}
+.loop{gap:8px}.loop-step{padding:17px 12px;min-height:128px}.loop-step b{font-size:13px}.loop-step span{font-size:11px}
+.calc{grid-template-columns:1.45fr .75fr;align-items:stretch}.rolecalc{padding:26px}.calc-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:18px}.calc-head h3{margin:0}.calc-head p{margin:4px 0 0;color:var(--muted);font-size:12px}.calc-tag{font-size:11px;font-weight:800;background:#edf0e5;padding:7px 10px;border-radius:999px}
+.scenario-grid{display:grid;grid-template-columns:.8fr 1fr 1fr;gap:14px}.scenario{border:1px solid var(--line);border-radius:16px;padding:15px;background:#fbfaf6}.scenario h4{margin:0 0 10px;font-size:13px}.scenario label{display:grid;grid-template-columns:1fr 92px;gap:10px;align-items:center;font-size:11px;color:#596057;margin:9px 0}.scenario input[type=number]{width:100%;border:1px solid var(--line);border-radius:8px;padding:7px;background:#fff}.scenario input[type=range]{width:100%}.scenario.common label:nth-of-type(3){grid-template-columns:1fr}.scenario.common #autoV{font-weight:850;color:var(--dark)}
+.result-business{padding:28px}.result-split{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:22px 0}.result-split>div{background:rgba(255,255,255,.08);border-radius:14px;padding:14px}.result-split span,.result-total span,.potential span{display:block;font-size:10px;opacity:.8;text-transform:uppercase;letter-spacing:.7px}.result-split b{display:block;font-size:24px;margin-top:3px}.result-split small{display:block}.result-total{border-top:1px solid rgba(255,255,255,.22);padding-top:17px}.potential{margin-top:20px;padding:14px;border:1px dashed rgba(255,255,255,.35);border-radius:14px}.potential b{display:inline-block;margin-right:18px;font-size:19px;margin-top:4px}
+.feedback-copy{max-width:690px}.feedback-questions{display:flex;gap:7px;flex-wrap:wrap;margin:16px 0}.feedback-questions span{border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:6px 9px;font-size:10px}.feedback-note{font-size:11px;opacity:.75}.survey-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:30px}.survey-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}.survey-card b{font-size:13px}.survey-card p{font-size:13px;color:var(--muted)}.survey-card.wide{grid-column:1/-1}
+@media(max-width:1100px){.links{display:none}.scenario-grid{grid-template-columns:1fr}.calc{grid-template-columns:1fr}.visual-pair{grid-template-columns:1fr}.phone-crop-dashboard{position:relative!important;right:auto!important;bottom:auto!important;margin:10px auto 0!important}.hero-shot{min-height:auto}}
 </style>
 </head>
 <body>
-<nav><div class="container nav"><a class="brand" href="#top"><img alt="just LEAN it." src="assets/just-lean-it-logo.svg"/></a><div class="links"><a href="#workflow">Prinzip</a><a href="#gsq">GSQ</a><a href="#mpp">MPP</a><a href="#wochenvorschau">4-Wochenvorschau</a><a href="#produkt">Produkt</a><a href="#nutzen">Nutzen</a></div><a class="btn primary" href="#pilot">Feedback geben</a></div></nav>
-<header class="hero" id="top"><div class="container hero-grid"><div><div class="badge"><i></i> Produktkonzept für die Produktionssteuerung</div><h1>Analog planen.<br/><em>Digital steuern.</em></h1><p class="lead">Die Zusammenarbeit bleibt dort, wo sie am stärksten ist: direkt am Board. just LEAN it. verbindet die analoge Last-Planner-Planung mit einer durchgängigen digitalen Steuerung – ohne Workshop-Ergebnisse manuell in Excel, Terminpläne und Auswertungen übertragen zu müssen.</p><div class="actions"><a class="btn primary" href="#workflow">Ablauf ansehen</a><a class="btn secondary" href="#produkt">Produktvorschau</a></div><p class="note">Produktkonzept in Validierung · für Gespräche mit Bau- und LEAN-Verantwortlichen</p></div>
+<nav><div class="container nav"><a class="brand" href="#top"><img alt="just LEAN it." src="assets/just-lean-it-logo.svg"/></a><div class="links"><a href="#prinzip">Prinzip</a><a href="#gsq">Gewerkesequenzen</a><a href="#mpp">Meilenstein-Phasenplan</a><a href="#wochenvorschau">Wochenvorschau</a><a href="#pep-flow">PEP</a><a href="#enterprise">Enterprise</a><a href="#nutzen">Business Case</a></div><a class="btn primary" href="#feedback">Feedback geben</a></div></nav>
+<header class="hero" id="top"><div class="container hero-grid"><div><div class="badge"><i></i> Produktkonzept für die Produktionssteuerung</div><h1>Analog planen.<br/><em>Digital steuern.</em></h1><p class="lead">Die Zusammenarbeit bleibt dort, wo sie ihre größte Wirkung entfaltet: gemeinsam im <strong>Big Room</strong> an der visuellen Planungstafel. <strong class="brand-inline"><em>just LEAN it</em></strong> verbindet diese analoge Last-Planner-Planung mit einer durchgängigen digitalen Steuerung – ohne Workshop-Ergebnisse anschließend manuell in Excel, Miro, Terminpläne oder separate Auswertungen übertragen zu müssen.</p><div class="actions"><a class="btn primary" href="#prinzip">Ablauf ansehen</a><a class="btn secondary" href="#produkt">Produktvorschau</a></div><p class="note">Produktkonzept in Validierung · für Gespräche mit Bau- und LEAN-Verantwortlichen</p></div>
 <div class="hero-visual">
 <div class="hero-shot">
 <img alt="just LEAN it. Dashboard mit AEZ, Make Ready, Meilensteinen, Störungen und Planstabilität" src="assets/dashboard.png"/>
-<div class="hero-mobile"><img alt="Mobile KPI-Ansicht von just LEAN it." src="assets/mobile-dashboard.png"/></div>
+<div class="hero-mobile phone-crop phone-crop-dashboard"><img alt="Mobile KPI-Ansicht von just LEAN it." src="assets/mobile-dashboard.png"/></div>
 </div>
 </div></div></header>
-<section class="section white" id="problem"><div class="container"><div class="kicker">Der Medienbruch</div><h2>Die Zusammenarbeit funktioniert am Board.<br/>Der Medienbruch beginnt danach.</h2><p class="intro">Workshops, Wochensteuerung und Abstimmung funktionieren physisch hervorragend. Doch Ergebnisse werden anschließend fotografiert, in Excel nachgebaut, in Terminplänen nachgeführt und separat ausgewertet. So entstehen Schnittstellen, Doppelarbeit und getrennte Datenstände.</p><div class="problem-grid"><article class="problem-card"><i>01</i><b>Schnittstellen &amp; Medienbrüche</b><p>Board → Foto → Excel → Terminplan → Protokoll → KPI-Auswertung. Informationen werden mehrfach übertragen.</p></article><article class="problem-card"><i>02</i><b>Manuelle Doppelarbeit</b><p>GSQ digitalisieren, MPP erstellen, Vorschau dokumentieren, Kennzahlen aktualisieren und Terminplan nachführen.</p></article><article class="problem-card"><i>03</i><b>Daten ohne Rückfluss</b><p>Zusagen, Störungen, Soll-/Ist-Dauern, Abweichungen, Restriktionen und Meilensteine werden erhoben – aber kaum wieder für Planung und Verbesserung genutzt.</p></article></div><p class="center-note">Was wäre, wenn die Information vom Board direkt weiterleben würde?</p></div></section>
-<section class="section" id="workflow"><div class="container"><div class="kicker">Analog + digital</div><h2>Die Zusammenarbeit bleibt analog.<br/>Die Information wird digital.</h2><p class="intro">GSQ- und MPP-Workshops, die 4-Wochenvorschau und die wöchentliche Produktionssteuerung bleiben physisch. just LEAN it. übernimmt die Ergebnisse in eine durchgängige digitale Projektsteuerung – von Planung und Make Ready bis zu Kennzahlen und Terminfortschreibung.</p><div class="bridge-grid"><div class="bridge-card"><h3>Analog</h3><ul><li>Gemeinsame Planung</li><li>Diskussion und Abstimmung</li><li>Post-its am physischen Board</li><li>Hohe Beteiligung</li></ul></div><div class="bridge-card connection"><h3>just LEAN it.</h3><ul><li>Smartphone-Erfassung</li><li>Abgleich mit Projektkontext</li><li>KI-Zuordnung statt reiner OCR</li><li>Unsicherheiten prüfen</li><li>Strukturierte Daten</li></ul></div><div class="bridge-card"><h3>Digital</h3><ul><li>GSQ, MPP und Make Ready</li><li>Digitale Wochenvorschau</li><li>Dokumentation und KPIs</li><li>Terminfortschreibung</li></ul></div></div><p class="center-note">Analog wird nicht ersetzt.<br/>Die manuelle Übertragung wird ersetzt.</p></div></section>
-<section class="section white" id="gsq"><div class="container"><div class="kicker">Gewerkesequenzen (GSQ)</div><h2>Gemeinsam am Board planen.<br/>Digital direkt weiterarbeiten.</h2><p class="intro">Gewerkesequenzen entstehen weiterhin gemeinsam im Workshop. just LEAN it. erfasst das Ergebnis, gleicht es mit dem Projektkontext ab und überführt es in eine strukturierte Planung. Nur unsichere Zuordnungen müssen geprüft werden.</p>
+<section class="section white" id="problem"><div class="container"><div class="kicker">Das Problem heute</div><h2>Analoge Planung funktioniert.<br/>Die Schnittstellen danach kosten Zeit und Information.</h2><p class="intro">Workshops sowie die wöchentliche <strong>Produktionsevaluierung und Produktionsplanung (PEP)</strong> funktionieren physisch sehr gut. Der Aufwand entsteht danach: Gewerkesequenzen und Meilenstein-Phasenpläne werden digital nachgebaut, Wochenvorschauen dokumentiert, Kennzahlen separat gepflegt und Terminpläne nachgeführt. Häufig liegen Board, Foto, Excel/Miro, Terminplan und KPI-Auswertung nebeneinander – ohne durchgängige Verbindung.</p><div class="problem-grid"><article class="problem-card"><i>01</i><b>Schnittstellen &amp; Medienbrüche</b><p>Physisches Board → Foto → Excel/Miro → Terminplan → Protokoll → KPI-Auswertung. Jede Übergabe ist eine Schnittstelle und potenzielle Informationslücke.</p></article><article class="problem-card"><i>02</i><b>Manuelle Doppelarbeit</b><p>GSQ und MPP digitalisieren, Wochenvorschau dokumentieren, Kennzahlen aufbereiten und den Terminplan nachführen – obwohl die Information bereits am Board vorhanden ist.</p></article><article class="problem-card"><i>03</i><b>Daten ohne systematischen Rückfluss</b><p>Zusagen, Störungen, Soll-/Ist-Dauern, Restriktionen und Terminabweichungen werden erhoben, aber nur begrenzt für Planung, Benchmarking und kontinuierliche Verbesserung genutzt.</p></article></div><p class="center-note">Was wäre, wenn die Information vom physischen Board direkt digital weiterverarbeitet würde?</p></div></section>
+<section class="section" id="prinzip"><div class="container"><div class="kicker">Analog und digital</div><h2>Gemeinsam analog planen.<br/>Digital ohne Medienbruch weiterarbeiten.</h2><p class="intro">GSQ- und MPP-Workshops, die Wochenvorschau und die PEP bleiben physisch und kollaborativ. <strong class="brand-inline"><em>just LEAN it</em></strong> übernimmt die Ergebnisse per Smartphone in eine strukturierte digitale Projektsteuerung – von Make Ready und Terminfortschreibung bis zu KPIs, Dokumentation und kontinuierlicher Verbesserung.</p><div class="bridge-grid"><div class="bridge-card"><h3>Analog</h3><ul><li>Gemeinsame Planung im Big Room</li><li>Direkter Austausch aller Beteiligten</li><li>Visuelle Planung mit Post-its</li><li>Hohe Beteiligung und gemeinsames Verständnis</li></ul></div><div class="bridge-card connection"><h3><strong class="brand-inline"><em>just LEAN it</em></strong></h3><ul><li>Smartphone-Erfassung</li><li>Abgleich mit Projekt- und Planungskontext</li><li>KI erkennt Inhalte und Zusammenhänge</li><li>Nur unsichere Zuordnungen prüfen</li><li>Strukturierte Projektdaten entstehen automatisch</li></ul></div><div class="bridge-card"><h3>Digital</h3><ul><li>Strukturierte GSQ und MPP</li><li>Digitale Wochenvorschau</li><li>KPIs, Störungen und Dokumentation</li><li>Automatische Terminfortschreibung</li><li>Projektübergreifende Auswertung</li></ul></div></div><p class="center-note">Die analoge Zusammenarbeit bleibt.<br/>Die manuelle Übertragung dazwischen entfällt.</p></div></section>
+<section class="section white" id="gsq"><div class="container"><div class="kicker">Gewerkesequenzen (GSQ)</div><h2>Gemeinsam im Big Room planen.<br/>Das Workshop-Ergebnis direkt digital nutzen.</h2><p class="intro">Gewerkesequenzen entstehen weiterhin gemeinsam und visuell im Workshop. <strong class="brand-inline"><em>just LEAN it</em></strong> erfasst die Post-its als Tätigkeiten, erkennt Gewerke, Dauern, Reihenfolgen und Meilensteine und gleicht sie mit dem Projektkontext ab. Statt die Sequenz anschließend manuell nachzuzeichnen, wird sie direkt als strukturierte digitale Planung weiterverwendet.</p>
 <div class="visual-pair">
 <figure class="visual-card">
-<div class="cap"><b>Analog: Gewerkesequenz im Workshop</b><span>gemeinsam planen · Post-its · reale Prozesslogik</span></div>
+<div class="cap"><b>Analog: Gewerkesequenz im Workshop</b><span>visuell · kollaborativ · reale Prozesslogik</span></div>
 <img alt="Analoger Gewerkesequenz-Workshop mit farbigen Post-its" src="assets/gsq-analog.png"/>
 </figure>
 <figure class="visual-card software-img">
-<div class="cap"><b>Digital: strukturierte Gewerkesequenz</b><span>Vorgänge · Gewerke · Dauern · Reihenfolge</span></div>
+<div class="cap"><b>Digital: strukturierte Gewerkesequenz</b><span>Tätigkeiten · Gewerke · Dauern · Reihenfolge</span></div>
 <img alt="Digitale Gewerkesequenz in just LEAN it." src="assets/gsq-digital.png"/>
 </figure>
 </div>
 <div class="visual-arrow"><span>Workshop-Ergebnis</span><i>→</i><span>Smartphone + KI</span><i>→</i><span>direkt digital weiterarbeiten</span></div>
 <div class="mobile-strip">
 <div>
-<h3>Fotografieren statt nachbauen.</h3>
-<p>Die KI erkennt Tätigkeiten, Gewerke, Dauern und Meilensteine, gleicht sie mit dem Projektkontext ab und legt nur unsichere Zuordnungen zur Prüfung vor.</p>
-<ul>
-<li>GSQ oder MPP direkt im Workshop erfassen</li>
-<li>Post-its und Inhalte automatisch strukturieren</li>
-<li>Ergebnis kurz prüfen und in das Projekt übernehmen</li>
-</ul>
+<h3>Vom Workshop-Ergebnis direkt zur digitalen Sequenz.</h3>
+<p>Die KI erkennt die am Board geplanten Tätigkeiten und ihre Zusammenhänge. Der Nutzer prüft nur unsichere Zuordnungen – danach steht die Sequenz im Projekt digital zur Verfügung.</p>
+<ul><li>GSQ oder MPP direkt im Workshop erfassen</li><li>Post-its als Tätigkeiten automatisch strukturieren</li><li>Gewerke, Dauern und Meilensteine zuordnen</li><li>Ergebnis prüfen und in das Projekt übernehmen</li></ul>
 </div>
 <img alt="Mobile Erfassung, KI-Analyse und Ergebnisprüfung" src="assets/mobile-workshop.png"/>
 </div>
 </div></section>
-<section class="section" id="mpp"><div class="container"><div class="kicker">Meilenstein- &amp; Phasenplan (MPP)</div><h2>Meilensteine setzen. Bestehende Sequenzen intelligent einordnen.</h2><p class="intro">just LEAN it. kombiniert den analogen MPP mit digitaler GSQ, Projektstruktur, Zeitfenstern und Meilensteinen – statt nur Text zu erkennen.</p>
+<section class="section" id="mpp"><div class="container"><div class="kicker">Meilenstein- &amp; Phasenplan (MPP)</div><h2>Meilensteine analog festlegen.<br/>Gewerkesequenzen automatisch in den Terminplan überführen.</h2><p class="intro">Im MPP-Workshop werden Bereiche, Zeitfenster sowie Start-, End- und Zwischenmeilensteine gemeinsam festgelegt. <strong class="brand-inline"><em>just LEAN it</em></strong> verbindet diesen analogen Plan mit den bereits digitalisierten Gewerkesequenzen und der Projektstruktur. Daraus entsteht der digitale Meilenstein-Phasenplan – ohne die Prozesse nochmals manuell aufzubauen.</p>
 <div class="visual-pair">
 <figure class="visual-card">
 <div class="cap"><b>Analog: Meilensteine und Zeitfenster setzen</b><span>Workshop bleibt physisch</span></div>
@@ -280,20 +298,13 @@ footer{padding:23px 0 38px;color:#787d74;font-size:11px}.foot{border-top:1px sol
 </figure>
 </div>
 <div class="visual-arrow"><span>Meilensteine + Projektstruktur</span><i>+</i><span>bereits digitalisierte GSQ</span><i>→</i><span>digitaler MPP</span></div>
-
 <div class="panel" style="margin-top:18px"><h3>Basisplan vs. Fortschreibungsplan</h3><div class="comparison-note"><b>Schalung Decke 2. OG · Basis KW36</b><b>Aktuell KW37</b><b class="danger-chip">+5 AT</b><b>◆ Decke 2. OG fertig · 18.09. → 25.09.</b><b class="danger-chip">2 Meilensteine gefährdet</b></div><p><b>Der Basisplan bleibt. Der Fortschreibungsplan entwickelt sich mit der tatsächlichen Produktion.</b><br/><small class="muted">Verschiebungen aus der Wochensteuerung fließen automatisch in die Terminprognose ein – ohne den MPP manuell neu aufzubauen.</small></p></div></div></section>
-<section class="section white" id="regelkreis"><div class="container"><div class="kicker">LPS-Regelkreis</div><h2>Ein durchgängiger Regelkreis von Planung bis kontinuierlicher Verbesserung.</h2><div class="loop"><div class="loop-step"><b>Master Planning</b><span>Meilensteine</span></div><div class="loop-step"><b>Phase Planning</b><span>GSQ + MPP</span></div><div class="loop-step"><b>Make Ready</b><span>Restriktionen lösen</span></div><div class="loop-step"><b>Lookahead</b><span>4-Wochenvorschau</span></div><div class="loop-step"><b>Commitment</b><span>Wochenzusagen</span></div><div class="loop-step"><b>Production</b><span>Umsetzung</span></div><div class="loop-step"><b>Evaluation</b><span>AEZ · Störungen · Ursachen</span></div><div class="loop-step"><b>Kontinuierliche Verbesserung</b><span>Maßnahmen · Standards · Rückkopplung</span></div></div></div></section>
-<section class="section" id="produkt"><div class="container"><div class="kicker">Produktvorschau</div><h2>Alles, was die Produktionssteuerung braucht.<br/>In einem System.</h2><p class="intro">Meilensteine, Make Ready, Vorschau, Zusagen, Störungen und Produktionsdaten greifen ineinander – statt in getrennten Dateien und Systemen zu liegen.</p>
+<section class="section white" id="regelkreis"><div class="container"><div class="kicker">Last Planner System · Regelkreis</div><h2>Ein durchgängiger Last-Planner-System-Regelkreis – von der Planung bis zur kontinuierlichen Verbesserung.</h2><div class="loop"><div class="loop-step"><b>Master Planning</b><span>Meilensteine &amp; Projektziele</span></div><div class="loop-step"><b>Phase Planning</b><span>GSQ &amp; MPP</span></div><div class="loop-step"><b>Make Ready</b><span>Restriktionen lösen</span></div><div class="loop-step"><b>Lookahead</b><span>Wochenvorschau</span></div><div class="loop-step"><b>Commitment</b><span>Verbindliche Wochenzusagen</span></div><div class="loop-step"><b>Production</b><span>Umsetzung auf der Baustelle</span></div><div class="loop-step"><b>Evaluation</b><span>AEZ · Störungen · Ursachen</span></div><div class="loop-step"><b>Kontinuierliche Verbesserung</b><span>Maßnahmen · Standards · Rückkopplung</span></div></div></div></section>
+<section class="section" id="produkt"><div class="container"><div class="kicker">Produktvorschau</div><h2>Alles, was die Produktionssteuerung braucht.<br/>In einem System.</h2><p class="intro">Vom einzelnen Vorgang bis zum aktuellen Projektstatus greifen die Informationen ineinander. Dashboard, Gewerkesequenzen, MPP, Wochenvorschau und PEP greifen auf dieselbe Datenbasis zu – statt getrennte Dateien und Insellösungen zu erzeugen.</p>
 <div class="product-gallery">
 <div class="carousel-top">
 <b>Produktansichten · fiktives Projekt</b>
-<div class="tabs">
-<button class="tab active" data-shot="shot-dashboard">Dashboard</button>
-<button class="tab" data-shot="shot-mpp">MPP</button>
-<button class="tab" data-shot="shot-gsq">GSQ</button>
-<button class="tab" data-shot="shot-4w">4-Wochenvorschau</button>
-<button class="tab" data-shot="shot-pep">PEP</button>
-</div>
+<div class="tabs"><button class="tab active" data-shot="shot-dashboard">Dashboard</button><button class="tab" data-shot="shot-gsq">GSQ</button><button class="tab" data-shot="shot-mpp">MPP</button><button class="tab" data-shot="shot-4w">Wochenvorschau</button><button class="tab" data-shot="shot-pep">PEP</button></div>
 </div>
 <div class="product-shot active" id="shot-dashboard"><img alt="Dashboard Produktansicht" src="assets/dashboard.png"/></div>
 <div class="product-shot" id="shot-mpp"><img alt="MPP Produktansicht" src="assets/mpp-digital.png"/></div>
@@ -302,26 +313,25 @@ footer{padding:23px 0 38px;color:#787d74;font-size:11px}.foot{border-top:1px sol
 <div class="product-shot" id="shot-pep"><img alt="PEP Dokumentation" src="assets/pep-documentation.png"/></div>
 </div>
 </div></section>
-
 <section class="section" id="wochenvorschau">
 <div class="container">
-<div class="kicker">4-Wochenvorschau</div>
-<h2>Die Tafel bleibt im Büro.<br/>Der Planstand lebt digital weiter.</h2>
-<p class="intro">Die Wochenvorschau bleibt das gemeinsame Steuerungsinstrument vor Ort. Nach der PEP wird der aktualisierte Stand fotografiert und als strukturierte digitale Vorschau übernommen.</p>
+<div class="kicker">Wochenvorschau</div>
+<h2>Die Wochenvorschau bleibt sichtbar im Big Room.<br/>Der aktuelle Planstand wird digital nutzbar.</h2>
+<p class="intro">Die Anzahl der Wochen kann projektspezifisch gewählt werden. Entscheidend bleibt die gemeinsame visuelle Steuerung im Big Room. Nach der PEP wird der aktualisierte Boardstand fotografiert und als strukturierte digitale Wochenvorschau übernommen – inklusive relevanter Verschiebungen, Restriktionen und Meilensteinbezüge.</p>
 <div class="visual-pair">
 <figure class="visual-card">
-<div class="cap"><b>Analog: vier Wochen direkt am Board</b><span>Bereiche · Wochentage · Gewerkefarben · Zusagen</span></div>
+<div class="cap"><b>Analog: Wochenvorschau im Big Room</b><span>visuell · aktuell · gemeinsam steuerbar</span></div>
 <img alt="Analoge 4-Wochenvorschau mit vier Wochenboards" src="assets/four-week-analog.jpg"/>
 </figure>
 <figure class="visual-card software-img">
-<div class="cap"><b>Digital: derselbe Planstand im System</b><span>aktuelle Woche · Meilensteine · Restriktionen · Durchlaufzeiten</span></div>
+<div class="cap"><b>Digital: derselbe Planstand im System</b><span>aktuelle Wochen · Restriktionen · Meilensteine · Durchlaufzeiten</span></div>
 <img alt="Digitale 4-Wochenvorschau in just LEAN it." src="assets/four-week-digital.png"/>
 </figure>
 </div>
-<p class="center-note">Kein zweites Planungssystem. Derselbe Plan – digital nutzbar.</p>
+<p class="center-note">Ein Planungsstand. Analog sichtbar und digital weiterverwendbar.</p>
 </div>
 </section>
-<section class="section white" id="pep-flow"><div class="container"><div class="kicker">Wöchentliche Produktionssteuerung</div><h2>Besprechen wie gewohnt.<br/>Danach ist alles aktuell.</h2><h3>Wöchentliche Produktionssteuerung – Produktionsevaluierung &amp; Produktionsplanung (PEP)</h3><p class="intro">Die Steuerung findet weiterhin gemeinsam an der 4-Wochenvorschau statt. Danach erfasst just LEAN it. Zusagen, Störungen und Terminänderungen per Smartphone, ordnet sie dem Projektkontext zu und übernimmt sie nach kurzer Prüfung.</p>
+<section class="section white" id="pep-flow"><div class="container"><div class="kicker">Wöchentliche Produktionsevaluierung und Produktionsplanung (PEP)</div><h2>Gemeinsam evaluieren und neu planen.<br/>Die Nachbereitung läuft automatisch mit.</h2><p class="intro">In der PEP wird die vergangene Woche am Board evaluiert: Zusagen werden abgehakt, Abweichungen Störungsursachen zugeordnet und die nächsten Wochen neu geplant. Anschließend fotografiert der Bauleiter die aktualisierte Wochenvorschau sowie relevante Störungen, Maßnahmen und Risiken. <strong class="brand-inline"><em>just LEAN it</em></strong> übernimmt daraus die digitale Dokumentation, KPI-Aktualisierung und – bei Terminverschiebungen – die Fortschreibung des MPP.</p>
 <div class="pep-visual">
 <figure class="pep-meeting">
 <div class="cap" style="padding:14px 16px"><b>Besprechung wie gewohnt am Board</b></div>
@@ -333,10 +343,10 @@ footer{padding:23px 0 38px;color:#787d74;font-size:11px}.foot{border-top:1px sol
 </figure>
 </div>
 <div class="pep-mobile-row">
-<img alt="Mobile PEP Abschlussansicht" src="assets/mobile-pep.png"/>
+<img alt="Mobile PEP Abschlussansicht" class="mobile-pep-clean" src="assets/mobile-pep.png"/>
 <div>
-<h3>Der Bauleiter dokumentiert nicht nach – er schließt ab.</h3>
-<p class="intro" style="font-size:16px">Fotos der aktualisierten 4-Wochenvorschau, der Störungen, Maßnahmen und Risiken reichen aus. just LEAN it. aktualisiert AEZ, Störungsanalyse, Dokumentation und Terminfortschreibung.</p>
+<h3>Fotos statt nachträglicher Dokumentationsarbeit.</h3>
+<p class="intro" style="font-size:16px">Der Bauleiter dokumentiert den Termin nicht ein zweites Mal. Aus den Fotos entstehen aktualisierte KPIs, Störungsanalyse, Wochenvorschau, Planänderungen, Maßnahmen, Risiken und der PEP-Bericht für die Teilnehmer.</p>
 <div class="result-grid" style="grid-template-columns:1fr 1fr">
 <div class="result-card"><h3>01 KPIs &amp; STÖRUNGEN</h3><p>AEZ, nicht eingehaltene Zusagen, Ursachen und Terminwirkung werden aktualisiert.</p></div>
 <div class="result-card"><h3>02 4-WOCHENVORSCHAU</h3><p>Der neue Boardstand wird digital strukturiert und historisiert.</p></div>
@@ -346,41 +356,71 @@ footer{padding:23px 0 38px;color:#787d74;font-size:11px}.foot{border-top:1px sol
 </div>
 </div>
 <p class="center-note">Ein Termin. Eine Datenbasis. Immer aktueller Planungsstand.</p></div></section>
-<section class="section" id="hybrid"><div class="container"><div class="kicker">Warum hybrid?</div><h2>Weniger nacharbeiten.<br/>Besser steuern.</h2><div class="hybrid-grid"><div class="compare-card"><h3>Rein analog</h3><h4>Stärken</h4><ul><li>Hohe Beteiligung</li><li>Flexible Boardarbeit</li></ul><h4>Aber</h4><ul class="weak"><li>Hoher Nachbereitungsaufwand</li><li>Fotos statt strukturierter Daten</li><li>Manuelle Plan- und KPI-Pflege</li><li>Geringe projektübergreifende Nutzung</li></ul></div><div class="compare-card"><h3>Rein digital</h3><h4>Stärken</h4><ul><li>Strukturierte Daten</li><li>Auswertbarkeit</li><li>Zentrale Dokumentation</li></ul><h4>Aber</h4><ul class="weak"><li>Höhere Einstiegshürde</li><li>Bedienung bestimmt den Workshop</li><li>Laufende Softwarepflege</li></ul></div><div class="compare-card hybrid"><div class="badge">Kombiniert die Stärken</div><h3>just LEAN it.</h3><ul><li>Physische Zusammenarbeit bleibt</li><li>Strukturierte Daten entstehen daraus</li><li>Weniger Nachbereitung</li><li>Aktueller Planungsstand</li><li>Automatische KPI-Aktualisierung</li><li>Automatische Terminfortschreibung</li><li>Langfristig nutzbare Produktionsdaten</li></ul></div></div></div></section>
-<section class="section white" id="nutzen"><div class="container"><div class="kicker">Nutzen + Business Case</div><h2>Weniger Aufwand ist nur der Anfang.</h2><div class="benefit-grid"><div class="benefit-card"><b>ZEIT</b><p>Weniger Dokumentation, Nachbereitung, doppelte Dateneingabe, manuelle Planpflege und KPI-Aufbereitung.</p></div><div class="benefit-card"><b>QUALITÄT</b><p>Strukturierte GSQ, hochwertiger MPP, digitale Vorschau, nachvollziehbare Abweichungen und frühere Risikoerkennung.</p></div><div class="benefit-card"><b>WISSEN</b><p>Soll-/Ist-Dauern, Störungen, Terminwirkung, Restriktionen, Planstabilität und projektübergreifende Daten.</p></div></div><div class="calc"><div class="calcbox"><h3>Heutigen Nachbereitungsaufwand sichtbar machen</h3><div class="field"><label><span>PEP / LPS-Termine pro Woche</span><span id="mV">2</span></label><input id="m" max="7" min="1" type="range" value="2"/></div><div class="field"><label><span>Nachbereitung je Termin</span><span id="minV">45 min</span></label><input id="min" max="120" min="15" step="5" type="range" value="45"/></div><div class="field"><label><span>Beteiligte in der Nachbereitung</span><span id="pV">2</span></label><input id="p" max="6" min="1" type="range" value="2"/></div><div class="field"><label><span>Interner Ansatz pro Stunde</span><span id="rV">75 €</span></label><input id="r" max="140" min="40" step="5" type="range" value="75"/></div></div><div class="result"><small>Manueller Nachbereitungsaufwand heute · pro Jahr*</small><div class="big" id="hours">144 h</div><div id="cost">≈ 10.800 € / Jahr</div><small>*48 Arbeitswochen. Potenzial – tatsächliche Einsparung wird im Pilot gemessen.</small></div></div></div></section>
-<section class="section" id="enterprise"><div class="container"><div class="kicker">Enterprise / Skalierung</div><h2>Aus Projektsteuerung wird Unternehmenswissen.</h2><p class="intro">Jede Baustelle arbeitet mit ihren eigenen Planungs- und Produktionsdaten. Einheitlich strukturiert entsteht nebenbei eine unternehmensweite Datenbasis – ohne zusätzliche Datenerhebung auf der Baustelle.</p>
+<section class="section" id="hybrid"><div class="container"><div class="kicker">Warum hybrid?</div><h2>Die Stärke der analogen Zusammenarbeit.<br/>Mit der Wirkung durchgängiger digitaler Daten.</h2><div class="hybrid-grid"><div class="compare-card"><h3>Rein analog</h3><h4>Stärken</h4><ul><li>Hohe Beteiligung und direkter Austausch</li><li>Visuelle Planung dauerhaft im Big Room sichtbar</li><li>Flexible Arbeit mit Post-its und Boards</li><li>Gemeinsames Verständnis im Workshop</li></ul><h4>Grenzen</h4><ul class="weak"><li>Hoher Dokumentations- und Nachbereitungsaufwand</li><li>Fotos statt strukturierter Projektdaten</li><li>Manuelle Plan- und KPI-Pflege</li><li>Viele Schnittstellen und geringe Wiederverwendung</li></ul></div><div class="compare-card"><h3>Rein digital</h3><h4>Stärken</h4><ul><li>Strukturierte und zentrale Daten</li><li>Auswertbarkeit und Nachverfolgung</li><li>Örtlich unabhängiger Zugriff</li><li>Automatisierte Berichte und Analysen</li></ul><h4>Grenzen</h4><ul class="weak"><li>Höhere Einstiegshürde im Workshop</li><li>Weniger direkte Interaktion und gemeinsames Arbeiten am Board</li><li>Bedienung der Software kann den Ablauf bestimmen</li><li>Laufende digitale Pflege notwendig</li></ul></div><div class="compare-card hybrid"><h3>Hybrid mit <strong class="brand-inline"><em>just LEAN it</em></strong></h3><h4>Kombiniert die Stärken</h4><ul><li>Physische Zusammenarbeit und Visualisierung bleiben erhalten</li><li>Strukturierte Daten entstehen direkt aus der analogen Planung</li><li>Weniger manuelle Nachbereitung und Schnittstellen</li><li>Aktueller Planungsstand auf Baustelle und mobil verfügbar</li><li>KPIs und Terminfortschreibung aktualisieren sich aus dem Prozess</li><li>Langfristig nutzbare Produktionsdaten für Lernen und Standards</li></ul></div></div></div></section>
+<section class="section" id="enterprise"><div class="container"><div class="kicker">Enterprise / Skalierung</div><h2>Aus Projektsteuerung wird Unternehmenswissen.</h2><p class="intro">Auf Projektebene entsteht die Datenbasis aus der täglichen Produktionssteuerung. Über Gruppe, Bereich und Unternehmen lassen sich Projekte vergleichbar auswerten: AEZ, Planstabilität, Störungen, Restriktionen, Meilensteinrisiken und Soll-/Ist-Dauern werden transparent. Wiederkehrende Sequenzen und reale Produktionsdauern können langfristig als Grundlage für Standardprozesse, Arbeitsvorbereitung und Kalkulation genutzt werden – ohne zusätzliche Datenerhebung auf der Baustelle.</p>
 <div class="enterprise-shot">
 <img alt="Enterprise-Übersicht von just LEAN it. mit Projekt-, Bereichs- und Unternehmenskennzahlen" src="assets/enterprise.png"/>
 </div>
 <p class="image-note">Beispieldaten und fiktive Projektnamen zur Darstellung des möglichen Skalierungspotenzials.</p>
-</div></section>
-<section class="cta" id="pilot"><div class="container"><div class="ctabox"><div><div class="kicker" style="color:#b9c79b">Produktvalidierung</div><h2>Passt diese Logik zu eurer Baustellenrealität?</h2><p>Wir suchen Feedback von Betriebsleitern, Bauleitern und LEAN Managern, die das Last Planner System in Projekten einsetzen.</p></div><div class="cta-actions"><a class="btn primary" href="mailto:hello@justlinit.com?subject=Feedback%20zu%20just%20LEAN%20it.">15-Minuten-Austausch</a><a class="btn secondary" href="mailto:hello@justlinit.com?subject=Pilotanfrage">Pilot anfragen</a></div></div></div></section>
-<footer><div class="container foot"><div><b>just LEAN it.</b><br/>Analog planen. Digital steuern. Gemeinsam verbessern.</div><div>Produktkonzept von Julian Wenger &amp; Josef Wilhelm · 2026</div></div></footer>
+</div></section><section class="section white" id="nutzen"><div class="container"><div class="kicker">Nutzen und Business Case</div><h2>Weniger Aufwand. Höhere Planungsqualität. Mehr nutzbares Wissen.</h2><div class="benefit-grid"><div class="benefit-card"><b>ZEIT &amp; KOSTEN</b><p>Weniger Dokumentation, Workshop-Nachbereitung, doppelte Dateneingabe, manuelle Planpflege und KPI-Aufbereitung.</p></div><div class="benefit-card"><b>QUALITÄT &amp; STEUERUNG</b><p>Strukturierte GSQ, hochwertiger MPP, aktuelle Wochenvorschau, nachvollziehbare Abweichungen und frühere Risikoerkennung.</p></div><div class="benefit-card"><b>WISSEN &amp; STANDARDISIERUNG</b><p>Soll-/Ist-Dauern, Störungen, Terminwirkung, Restriktionen und Planstabilität werden projektübergreifend vergleichbar und wiederverwendbar.</p></div></div><div class="calc"><div class="calcbox rolecalc">
+<div class="calc-head"><div><h3>Business Case · Beispielwerte</h3><p>Alle Werte sind editierbar. Die tatsächliche Einsparung wird im Pilot gemessen.</p></div><span class="calc-tag">Lean Manager + Bauleiter</span></div>
+<div class="scenario-grid">
+<div class="scenario common"><h4>Projekt / Unternehmen</h4>
+<label>Aktive Projekte <input id="projects" max="100" min="1" type="number" value="5"/></label>
+<label>Ø Bauzeit je Projekt (Monate) <input id="months" max="60" min="3" type="number" value="18"/></label>
+<label>Automatisierbarer Anteil <input id="auto" max="90" min="30" type="range" value="70"/><span id="autoV">70 %</span></label>
+</div>
+<div class="scenario"><h4>LEAN Manager · je Projekt</h4>
+<label>GSQ-Digitalisierung / Nachbereitung (h) <input id="lmGsq" min="0" step="0.5" type="number" value="2"/></label>
+<label>MPP-Digitalisierung / Nachbereitung (h) <input id="lmMpp" min="0" step="0.5" type="number" value="4"/></label>
+<label>Workshop-Dokumentation (h) <input id="lmDoc" min="0" step="0.5" type="number" value="1.5"/></label>
+<label>Interner Stundensatz (€) <input id="lmRate" min="30" step="5" type="number" value="80"/></label>
+</div>
+<div class="scenario"><h4>Bauleiter · laufend</h4>
+<label>PEP-Dokumentation je Woche (h) <input id="blPep" min="0" step="0.25" type="number" value="1"/></label>
+<label>Wochenvorschau Doku/Nachbereitung je Woche (h) <input id="blLook" min="0" step="0.25" type="number" value="2"/></label>
+<label>MPP-Aktualisierung je Monat (h) <input id="blMpp" min="0" step="0.5" type="number" value="2"/></label>
+<label>KPI-/Berichtsaufbereitung je Woche (h) <input id="blKpi" min="0" step="0.25" type="number" value="0.5"/></label>
+<label>Interner Stundensatz (€) <input id="blRate" min="30" step="5" type="number" value="75"/></label>
+</div>
+</div>
+</div>
+<div class="result result-business">
+<small>Heutiger manueller Aufwand · betrachtetes Unternehmensszenario</small>
+<div class="result-split"><div><span>LEAN Manager</span><b id="lmHours">0 h</b><small id="lmCost">0 €</small></div><div><span>Bauleiter</span><b id="blHours">0 h</b><small id="blCost">0 €</small></div></div>
+<div class="result-total"><span>Gesamt</span><div class="big" id="hours">0 h</div><div id="cost">0 €</div></div>
+<div class="potential"><span>Rechnerisches Automatisierungspotenzial*</span><b id="saveHours">0 h</b><b id="saveCost">0 €</b></div>
+<small>*Potenzial auf Basis der gewählten Annahmen. Keine zugesicherte Einsparung; Validierung im Pilot.</small>
+</div></div></div></section>
+<section class="cta" id="feedback"><div class="container"><div class="ctabox"><div class="feedback-copy"><div class="kicker" style="color:#b9c79b">Produktvalidierung</div><h2>Passt diese Logik zu eurer Baustellenrealität?</h2><p>Die Landingpage dient bewusst der frühen Validierung. Wir möchten von Bauleitern, Projektleitern, Betriebsleitern und LEAN Managern wissen, wo der größte Nutzen liegt – und was noch fehlt.</p><div class="feedback-questions"><span>Relevanz für die eigene Baustelle</span><span>Potenzial zur Aufwandsreduktion</span><span>Qualitätsgewinn in Planung &amp; Steuerung</span><span>Nutzungsbereitschaft</span><span>Wichtigste fehlende Funktion</span></div><p class="feedback-note">Das finale Formular wird hier als externer Umfrage-Link bzw. QR-Code eingebunden. Personen- und Firmendaten sind nur für den Umfrageersteller sichtbar.</p></div><div class="cta-actions"><a class="btn primary" href="#survey-plan">Umfrage-Vorschlag ansehen</a><a class="btn secondary" href="mailto:hello@justlinit.com?subject=Pilotanfrage">Pilot anfragen</a></div></div></div></section><section class="section white" id="survey-plan"><div class="container"><div class="kicker">Feedback-Umfrage · Vorschlag</div><h2>Kurz genug für den Pitch. Aussagekräftig genug für die Validierung.</h2><p class="intro">Empfohlen sind 8–10 Fragen und maximal drei Minuten Bearbeitungszeit. Name und Firma können optional erfasst werden; die Antworten bleiben ausschließlich im Auswertungsbereich des Formulars sichtbar.</p><div class="survey-grid"><div class="survey-card"><b>01 · Hintergrund</b><p>Rolle: Bauleiter / Projektleiter / Betriebsleiter / LEAN Manager / Sonstige<br/>Erfahrung Baubranche in Jahren<br/>Name &amp; Firma optional</p></div><div class="survey-card"><b>02 · Problemrelevanz</b><p>Wie hoch ist heute der Aufwand für Dokumentation und Nachbereitung?<br/>Wie problematisch sind Medienbrüche zwischen analoger Planung und digitalen Systemen?</p></div><div class="survey-card"><b>03 · Produktnutzen</b><p>Wie groß ist der erwartete Mehrwert von KI-gestützter Digitalisierung?<br/>Wie relevant sind automatische KPI- und MPP-Fortschreibung?</p></div><div class="survey-card"><b>04 · Nutzungsbereitschaft</b><p>Würdest du die Lösung auf einem eigenen Projekt testen?<br/>Welche Funktion wäre für dich entscheidend?</p></div><div class="survey-card wide"><b>05 · Offenes Feedback</b><p>„Was müsste <strong class="brand-inline"><em>just LEAN it</em></strong> können, damit du es auf deiner Baustelle einsetzen würdest?“ Die Antworten eignen sich anschließend für eine Schlagwort-/Word-Cloud-Auswertung.</p></div></div></div></section>
+<footer><div class="container foot"><div><b>just LEAN it.</b><br/>Analog planen. Digital steuern. Aus Projekten lernen.</div><div>Produktkonzept von Julian Wenger &amp; Josef Wilhelm · 2026</div></div></footer>
 <script>
 document.querySelectorAll('.product-gallery .tab').forEach(btn=>{
  btn.addEventListener('click',()=>{
   document.querySelectorAll('.product-gallery .tab').forEach(b=>b.classList.remove('active'));
   document.querySelectorAll('.product-shot').forEach(s=>s.classList.remove('active'));
-  btn.classList.add('active');
-  const target=document.getElementById(btn.dataset.shot);
-  if(target) target.classList.add('active');
+  btn.classList.add('active'); const target=document.getElementById(btn.dataset.shot); if(target) target.classList.add('active');
  });
 });
-['m','min','p','r'].forEach(id=>{
- const el=document.getElementById(id);
- if(el) el.addEventListener('input',calc);
-});
-function calc(){
- const m=+document.getElementById('m').value, mi=+document.getElementById('min').value, p=+document.getElementById('p').value, r=+document.getElementById('r').value;
- document.getElementById('mV').textContent=m;
- document.getElementById('minV').textContent=mi+' min';
- document.getElementById('pV').textContent=p;
- document.getElementById('rV').textContent=r+' €';
- const h=m*(mi/60)*p*48, c=h*r;
- document.getElementById('hours').textContent=Math.round(h)+' h';
- document.getElementById('cost').textContent='≈ '+Math.round(c).toLocaleString('de-DE')+' € / Jahr';
+const calcIds=['projects','months','auto','lmGsq','lmMpp','lmDoc','lmRate','blPep','blLook','blMpp','blKpi','blRate'];
+calcIds.forEach(id=>{const e=document.getElementById(id);if(e)e.addEventListener('input',calcBusiness)});
+function eur(v){return Math.round(v).toLocaleString('de-DE')+' €'}
+function calcBusiness(){
+ const projects=+document.getElementById('projects').value||0, months=+document.getElementById('months').value||0, auto=(+document.getElementById('auto').value||0)/100;
+ document.getElementById('autoV').textContent=Math.round(auto*100)+' %';
+ const lmPer=(+document.getElementById('lmGsq').value||0)+(+document.getElementById('lmMpp').value||0)+(+document.getElementById('lmDoc').value||0);
+ const lmH=projects*lmPer, lmRate=+document.getElementById('lmRate').value||0;
+ const weeks=months*4.33;
+ const blPerWeek=(+document.getElementById('blPep').value||0)+(+document.getElementById('blLook').value||0)+(+document.getElementById('blKpi').value||0);
+ const blMonthly=+document.getElementById('blMpp').value||0;
+ const blH=projects*(weeks*blPerWeek+months*blMonthly), blRate=+document.getElementById('blRate').value||0;
+ const totalH=lmH+blH, totalC=lmH*lmRate+blH*blRate;
+ document.getElementById('lmHours').textContent=Math.round(lmH)+' h'; document.getElementById('lmCost').textContent=eur(lmH*lmRate);
+ document.getElementById('blHours').textContent=Math.round(blH)+' h'; document.getElementById('blCost').textContent=eur(blH*blRate);
+ document.getElementById('hours').textContent=Math.round(totalH)+' h'; document.getElementById('cost').textContent='≈ '+eur(totalC);
+ document.getElementById('saveHours').textContent=Math.round(totalH*auto)+' h'; document.getElementById('saveCost').textContent='≈ '+eur(totalC*auto);
 }
-calc();
+calcBusiness();
 </script>
 </body>
 </html>
