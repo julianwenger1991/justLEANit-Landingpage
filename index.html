@@ -414,6 +414,135 @@ footer{padding:23px 0 38px;color:#787d74;font-size:11px}.foot{border-top:1px sol
 @media(max-width:900px){
  .survey-result-grid.final,.validation-detail-grid{grid-template-columns:1fr}
 }
+
+/* ===== FINAL V2 POLISH ===== */
+
+/* PEP smartphone: always show complete device */
+.pep-mobile-row{
+  overflow:visible!important;
+  grid-template-columns:180px minmax(0,1fr)!important;
+  align-items:start!important;
+  column-gap:26px!important;
+}
+.mobile-pep-v6{
+  width:176px!important;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  display:block!important;
+  margin:0 auto 20px!important;
+  clip-path:none!important;
+}
+@media(max-width:900px){
+  .pep-mobile-row{grid-template-columns:1fr!important}
+  .mobile-pep-v6{width:170px!important}
+}
+
+/* Business Case must use full container width */
+#nutzen .calc{
+  display:block!important;
+  width:100%!important;
+  max-width:none!important;
+  margin-top:28px!important;
+}
+#nutzen .business-final{
+  width:100%!important;
+  display:grid!important;
+  grid-template-columns:minmax(0,2.1fr) minmax(290px,.9fr)!important;
+  gap:24px!important;
+  align-items:stretch!important;
+}
+#nutzen .calcbox{
+  width:auto!important;
+  min-width:0!important;
+}
+#nutzen .business-input-grid{
+  grid-template-columns:.72fr 1.12fr 1.02fr!important;
+  gap:16px!important;
+}
+#nutzen .business-panel{
+  min-width:0!important;
+  padding:18px!important;
+}
+#nutzen .business-panel label{
+  grid-template-columns:minmax(0,1fr) 78px!important;
+  font-size:10px!important;
+  line-height:1.3!important;
+}
+#nutzen .business-panel input[type=number]{
+  width:78px!important;
+}
+#nutzen .business-factor{
+  grid-template-columns:1fr auto!important;
+  min-height:auto!important;
+  padding:14px 16px!important;
+}
+.fixed-factor{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:72px;
+  padding:10px 15px;
+  border-radius:999px;
+  background:var(--dark);
+  color:#fff;
+  font-size:18px;
+  font-weight:900;
+}
+#nutzen .business-result{
+  min-height:100%!important;
+  padding:30px!important;
+}
+@media(max-width:1000px){
+  #nutzen .business-final{grid-template-columns:1fr!important}
+  #nutzen .business-input-grid{grid-template-columns:1fr!important}
+}
+
+/* Live results */
+#surveyRoleFilter{
+  cursor:pointer!important;
+  opacity:1!important;
+  background:#fff!important;
+}
+.survey-metric .bar{
+  position:relative;
+  height:9px;
+  overflow:hidden;
+  border-radius:999px;
+  background:#e7eadf;
+  margin:13px 0 8px;
+}
+.survey-metric .bar i{
+  display:block;
+  height:100%;
+  border-radius:999px;
+  background:var(--olive);
+}
+.survey-metric.has-data b{color:var(--ink)!important}
+.result-bars{display:grid;gap:10px}
+.result-bar-row{
+  display:grid;
+  grid-template-columns:minmax(150px,1.5fr) minmax(120px,2fr) 48px;
+  gap:10px;align-items:center;font-size:10px
+}
+.result-bar-track{height:10px;background:#e8eadf;border-radius:999px;overflow:hidden}
+.result-bar-track i{display:block;height:100%;background:var(--olive);border-radius:999px}
+.result-bar-row strong{text-align:right}
+.result-list{display:grid;gap:8px}
+.result-list-row{
+  display:flex;justify-content:space-between;gap:16px;
+  padding:8px 0;border-bottom:1px solid #ece9df;font-size:10px
+}
+.result-list-row:last-child{border-bottom:0}
+.result-list-row b{white-space:nowrap}
+.survey-meta{
+  display:flex;gap:9px;flex-wrap:wrap;margin:5px 0 16px
+}
+.survey-meta span{
+  border:1px solid var(--line);background:#fff;border-radius:999px;
+  padding:6px 9px;font-size:9px;font-weight:800;color:var(--muted)
+}
 </style>
 <link href="data:image/png;base64,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" rel="icon" type="image/png"/></head>
 <body>
@@ -545,7 +674,7 @@ Terminplan und KPI-Auswertung nebeneinander – ohne durchgängige Verbindung un
 <img alt="Enterprise-Übersicht von just LEAN it. mit Projekt-, Bereichs- und Unternehmenskennzahlen" src="assets/enterprise.png"/>
 </div>
 <p class="image-note">Beispieldaten und fiktive Projektnamen zur Darstellung des möglichen Skalierungspotenzials.</p>
-</div></section><section class="section white" id="nutzen"><div class="container"><div class="kicker">Nutzen und Business Case</div><h2>Weniger Aufwand. Höhere Planungsqualität. Mehr nutzbares Wissen.</h2><div class="benefit-grid"><div class="benefit-card"><b>ZEIT &amp; KOSTEN</b><p>Weniger Dokumentation, Workshop-Nachbereitung, doppelte Dateneingabe, manuelle Planpflege und KPI-Aufbereitung.</p></div><div class="benefit-card"><b>QUALITÄT &amp; STEUERUNG</b><p>Strukturierte GSQ, hochwertiger MPP, aktuelle Wochenvorschau, nachvollziehbare Abweichungen und frühere Risikoerkennung.</p></div><div class="benefit-card"><b>WISSEN &amp; STANDARDISIERUNG</b><p>Soll-/Ist-Dauern, Störungen, Terminwirkung, Restriktionen und Planstabilität werden projektübergreifend vergleichbar und wiederverwendbar.</p></div></div><div class="calc">
+</div></section><section class="section white" id="nutzen"><div class="container"><div class="kicker">Nutzen und Business Case</div><h2>Weniger Aufwand. Höhere Planungsqualität.<br/>Mehr nutzbares Wissen.</h2><div class="benefit-grid"><div class="benefit-card"><b>ZEIT &amp; KOSTEN</b><p>Weniger Dokumentation, Workshop-Nachbereitung, doppelte Dateneingabe, manuelle Planpflege und KPI-Aufbereitung.</p></div><div class="benefit-card"><b>QUALITÄT &amp; STEUERUNG</b><p>Strukturierte GSQ, hochwertiger MPP, aktuelle Wochenvorschau, nachvollziehbare Abweichungen und frühere Risikoerkennung.</p></div><div class="benefit-card"><b>WISSEN &amp; STANDARDISIERUNG</b><p>Soll-/Ist-Dauern, Störungen, Terminwirkung, Restriktionen und Planstabilität werden projektübergreifend vergleichbar und wiederverwendbar.</p></div></div><div class="calc">
 <div class="business-final">
 <div class="calcbox rolecalc">
 <div class="calc-head">
@@ -564,31 +693,28 @@ Terminplan und KPI-Auswertung nebeneinander – ohne durchgängige Verbindung un
 </div>
 <div class="business-panel">
 <h4>LEAN Manager · Aufwand je Projekt</h4>
-<label>GSQ · Digitalisierung / Nachbereitung<input id="lmGsq" min="0" step="0.25" type="number" value="2"/></label>
-<label>MPP · Digitalisierung / Nachbereitung<input id="lmMpp" min="0" step="0.25" type="number" value="2"/></label>
-<label>Wochenvorschau · Aufsetzen / Nachbereitung<input id="lmLookSetup" min="0" step="0.25" type="number" value="2"/></label>
-<label>MPP-Aktualisierung · je Workshop<input id="lmMppUpdate" min="0" step="0.25" type="number" value="2"/></label>
+<label>GSQ · Digitalisierung / Nachbereitung (h)<input id="lmGsq" min="0" step="0.25" type="number" value="2"/></label>
+<label>MPP · Digitalisierung / Nachbereitung (h)<input id="lmMpp" min="0" step="0.25" type="number" value="2"/></label>
+<label>Wochenvorschau · Aufsetzen / Nachbereitung (h)<input id="lmLookSetup" min="0" step="0.25" type="number" value="2"/></label>
+<label>MPP-Aktualisierung · je Workshop (h)<input id="lmMppUpdate" min="0" step="0.25" type="number" value="2"/></label>
 <label>Anzahl MPP-Aktualisierungen / Projekt<input id="lmMppUpdateCount" min="0" step="1" type="number" value="3"/></label>
-<label>PEP-Dokumentation · je Termin<input id="lmPepDoc" min="0" step="0.25" type="number" value="1"/></label>
+<label>PEP-Dokumentation · je Termin (h)<input id="lmPepDoc" min="0" step="0.25" type="number" value="1"/></label>
 <label>Anteil PEP-Doku durch LEAN Manager (%)<input id="lmPepShareNumber" max="100" min="0" type="number" value="0"/></label>
 </div>
 <div class="business-panel">
 <h4>Bauleitung · laufender Aufwand</h4>
-<label>PEP-Dokumentation · je Termin<input id="blPep" min="0" step="0.25" type="number" value="1"/></label>
-<label>Wochenvorschau · Doku / Nachbereitung je Woche<input id="blLook" min="0" step="0.25" type="number" value="2"/></label>
-<label>MPP · Planpflege je Monat<input id="blMpp" min="0" step="0.25" type="number" value="2"/></label>
-<label>KPI- / Berichtsaufbereitung je Woche<input id="blKpi" min="0" step="0.25" type="number" value="0.5"/></label>
+<label>PEP-Dokumentation · je Termin (h)<input id="blPep" min="0" step="0.25" type="number" value="1"/></label>
+<label>Wochenvorschau · Doku / Nachbereitung je Woche (h)<input id="blLook" min="0" step="0.25" type="number" value="2"/></label>
+<label>MPP · Planpflege je Monat (h)<input id="blMpp" min="0" step="0.25" type="number" value="2"/></label>
+<label>KPI- / Berichtsaufbereitung je Woche (h)<input id="blKpi" min="0" step="0.25" type="number" value="0.5"/></label>
 </div>
 </div>
 <div class="business-factor">
 <div>
 <strong>Angenommener Reduktionsfaktor durch just LEAN it</strong>
-<span>Gewichtete Startannahme für die adressierten Dokumentations- und Übertragungsaufwände. Im Pilot wird dieser Wert durch die gemessene Ist-/Soll-Differenz ersetzt.</span>
+<span>80 % als feste Startannahme für den Pilot. Der Wert basiert auf einer realistischen Einschätzung des LEAN Managements für die adressierten manuellen Digitalisierungs-, Dokumentations- und Übertragungsaufwände. Im Pilot wird diese Annahme durch gemessene Vorher-/Nachher-Werte validiert.</span>
 </div>
-<div class="factor-control">
-<input id="automationFactor" max="100" min="0" type="range" value="80"/>
-<output id="automationFactorV">80 %</output>
-</div>
+<div class="fixed-factor">80 %</div>
 </div>
 <div class="business-note">
       Für das Gehaltsäquivalent werden als Referenzwerte LEAN Manager Ø 64.200 € brutto/Jahr und Bauleiter Ø 67.600 € brutto/Jahr angesetzt (Österreich, Stand August 2026). Umrechnung mit 1.680 Arbeitsstunden/Jahr, ohne Lohnnebenkosten. Die Reduktionsannahme ist eine Hypothese und keine zugesicherte Einsparung.
@@ -644,9 +770,9 @@ Terminplan und KPI-Auswertung nebeneinander – ohne durchgängige Verbindung un
 <div class="survey-results-head">
 <div>
 <h3>Ergebnisübersicht</h3>
-<p id="surveyCountText">Noch keine freigegebenen Ergebnisse veröffentlicht.</p>
+<p id="surveyCountText">1 Test-Rückmeldung aus dem aktuellen Microsoft-Forms-Export.</p>
 </div>
-<select disabled="" id="surveyRoleFilter">
+<select id="surveyRoleFilter">
 <option>Alle Rollen</option>
 <option>Bauleitung / Bautechnik</option>
 <option>Projektleitung / Betriebsleitung</option>
@@ -654,6 +780,12 @@ Terminplan und KPI-Auswertung nebeneinander – ohne durchgängige Verbindung un
 <option>Externer LEAN Berater / Consultant</option>
 </select>
 </div>
+<div class="survey-meta">
+<span id="surveyN">n = 1</span>
+<span>Stand: aktueller Forms-Export</span>
+<span>Nur aggregierte Daten</span>
+</div>
+
 <div class="survey-result-grid final">
 <div class="survey-metric empty">
 <span>Problemrelevanz</span><b id="metricProblem">— / 5</b>
@@ -701,10 +833,10 @@ document.querySelectorAll('.product-gallery .tab').forEach(btn=>{
   });
 });
 
+/* ---------------- Business Case ---------------- */
 const calcIds=[
   'projects','months','pepFreq','lmGsq','lmMpp','lmLookSetup','lmMppUpdate',
-  'lmMppUpdateCount','lmPepDoc','lmPepShareNumber','blPep','blLook','blMpp',
-  'blKpi','automationFactor'
+  'lmMppUpdateCount','lmPepDoc','lmPepShareNumber','blPep','blLook','blMpp','blKpi'
 ];
 calcIds.forEach(id=>{
   const e=document.getElementById(id);
@@ -716,12 +848,12 @@ function euro(v){return Math.round(v).toLocaleString('de-DE')+' €'}
 function hrs(v){return Math.round(v).toLocaleString('de-DE')+' h'}
 
 function calc(){
+  const factor=0.80;  // fixed pilot assumption
   const projects=n('projects');
   const months=n('months');
   const weeks=months*4.345;
   const pepFreq=n('pepFreq');
   const lmShare=Math.max(0,Math.min(100,n('lmPepShareNumber')))/100;
-  const factor=Math.max(0,Math.min(100,n('automationFactor')))/100;
 
   const lmPerProject =
       n('lmGsq')
@@ -745,18 +877,119 @@ function calc(){
   const baseCost=lmBase*lmRate + blBase*blRate;
 
   const saveHours=totalBase*factor;
-  const saveCost=(lmBase*lmRate + blBase*blRate)*factor;
+  const saveCost=baseCost*factor;
 
-  document.getElementById('automationFactorV').textContent=Math.round(factor*100)+' %';
   document.getElementById('lmBaseHours').textContent=hrs(lmBase);
   document.getElementById('blBaseHours').textContent=hrs(blBase);
   document.getElementById('baseHours').textContent=hrs(totalBase);
   document.getElementById('baseCost').textContent=euro(baseCost)+' Gehaltsäquivalent';
   document.getElementById('saveHours').textContent=hrs(saveHours);
   document.getElementById('saveCost').textContent='≈ '+euro(saveCost);
-  document.getElementById('reductionShare').textContent='bei '+Math.round(factor*100)+' % Pilotannahme';
+  document.getElementById('reductionShare').textContent='bei 80 % fester Pilotannahme';
 }
 calc();
+
+/* ---------------- Product validation ---------------- */
+const surveyData = [{"role": "Interner LEAN Manager / LEAN Construction Manager", "problem_effort": 5, "problem_media": 5, "benefit_capture": 5, "benefit_pep": 5, "benefit_mpp": 5, "benefit_enterprise": 5, "pilot": "Ja, definitiv", "priority": "Erstellung / Digitalisierung des Meilenstein-Phasenplans (MPP)", "barrier": "Integration in bestehende Systeme"}];
+
+const roleFilter=document.getElementById('surveyRoleFilter');
+if(roleFilter) roleFilter.addEventListener('change',renderSurvey);
+
+function avg(arr){
+  if(!arr.length) return null;
+  return arr.reduce((a,b)=>a+b,0)/arr.length;
+}
+function pct(v,max=5){
+  return v==null?0:Math.max(0,Math.min(100,(v/max)*100));
+}
+function mostCommon(arr){
+  if(!arr.length) return null;
+  const m={};
+  arr.forEach(v=>m[v]=(m[v]||0)+1);
+  return Object.entries(m).sort((a,b)=>b[1]-a[1])[0];
+}
+function shortPriority(s){
+  if(!s) return '—';
+  if(s.includes('Meilenstein-Phasenplans')) return 'MPP-Digitalisierung';
+  if(s.includes('Gewerke-Sequenzen')) return 'GSQ-Digitalisierung';
+  if(s.includes('PEP-Dokumentation')) return 'PEP-Dokumentation';
+  if(s.includes('Fortschreibung')) return 'MPP-Fortschreibung';
+  if(s.includes('Wochenvorschau')) return 'Wochenvorschau';
+  if(s.includes('Make Ready')) return 'Make Ready';
+  if(s.includes('Unternehmensweite')) return 'Enterprise-Auswertung';
+  return s;
+}
+function renderBars(containerId, items){
+  const c=document.getElementById(containerId);
+  if(!c) return;
+  if(!items.length){
+    c.innerHTML='<div class="empty-chart">Für diese Rolle liegen noch keine Antworten vor.</div>';
+    return;
+  }
+  c.innerHTML='<div class="result-bars">'+items.map(x=>`
+    <div class="result-bar-row">
+      <span>${x.label}</span>
+      <div class="result-bar-track"><i style="width:${pct(x.value)}%"></i></div>
+      <strong>${x.value.toFixed(1).replace('.',',')} / 5</strong>
+    </div>`).join('')+'</div>';
+}
+function renderList(containerId, items){
+  const c=document.getElementById(containerId);
+  if(!c) return;
+  if(!items.length){
+    c.innerHTML='<div class="empty-chart">Für diese Rolle liegen noch keine Antworten vor.</div>';
+    return;
+  }
+  c.innerHTML='<div class="result-list">'+items.map(x=>`
+    <div class="result-list-row"><span>${x.label}</span><b>${x.count}×</b></div>`).join('')+'</div>';
+}
+function renderSurvey(){
+  const selected=roleFilter?.value||'Alle Rollen';
+  const rows=selected==='Alle Rollen' ? surveyData : surveyData.filter(r=>r.role===selected);
+
+  const problemVals=rows.flatMap(r=>[r.problem_effort,r.problem_media]).filter(Number.isFinite);
+  const benefitVals=rows.flatMap(r=>[r.benefit_capture,r.benefit_pep,r.benefit_mpp,r.benefit_enterprise]).filter(Number.isFinite);
+  const problem=avg(problemVals);
+  const benefit=avg(benefitVals);
+  const pilotPositive=rows.length ? 100*rows.filter(r=>r.pilot==='Ja, definitiv'||r.pilot==='Eher ja').length/rows.length : null;
+  const top=mostCommon(rows.map(r=>r.priority).filter(Boolean));
+
+  document.getElementById('surveyCountText').textContent =
+    rows.length ? `${rows.length} Rückmeldung${rows.length===1?'':'en'} in dieser Ansicht.` : 'Für diese Rolle liegen noch keine Antworten vor.';
+  const nEl=document.getElementById('surveyN'); if(nEl) nEl.textContent='n = '+rows.length;
+
+  const setMetric=(id,barId,value,text)=>{
+    const el=document.getElementById(id), bar=document.getElementById(barId);
+    if(el) el.textContent=text;
+    if(bar) bar.style.width=value+'%';
+    el?.closest('.survey-metric')?.classList.toggle('has-data', value>0);
+  };
+  setMetric('metricProblem','barProblem',pct(problem),problem==null?'— / 5':problem.toFixed(1).replace('.',',')+' / 5');
+  setMetric('metricBenefit','barBenefit',pct(benefit),benefit==null?'— / 5':benefit.toFixed(1).replace('.',',')+' / 5');
+  setMetric('metricPilot','barPilot',pilotPositive==null?0:pilotPositive,pilotPositive==null?'— %':Math.round(pilotPositive)+' %');
+  setMetric('metricPriority','barPriority',top?100:0,top?shortPriority(top[0]):'—');
+
+  if(rows.length){
+    renderBars('benefitChart',[
+      {label:'GSQ / MPP per Smartphone digitalisieren',value:avg(rows.map(r=>r.benefit_capture))},
+      {label:'PEP-Dokumentation automatisieren',value:avg(rows.map(r=>r.benefit_pep))},
+      {label:'MPP automatisch fortschreiben',value:avg(rows.map(r=>r.benefit_mpp))},
+      {label:'Projekt- & Enterprise-Auswertung',value:avg(rows.map(r=>r.benefit_enterprise))}
+    ]);
+
+    const p={}, h={};
+    rows.forEach(r=>{if(r.priority)p[r.priority]=(p[r.priority]||0)+1;if(r.barrier)h[r.barrier]=(h[r.barrier]||0)+1;});
+    const items=[
+      ...Object.entries(p).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([k,v])=>({label:'Priorität: '+shortPriority(k),count:v})),
+      ...Object.entries(h).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([k,v])=>({label:'Hürde: '+k,count:v}))
+    ];
+    renderList('priorityChart',items);
+  } else {
+    renderBars('benefitChart',[]);
+    renderList('priorityChart',[]);
+  }
+}
+renderSurvey();
 </script>
 </body>
 </html>
